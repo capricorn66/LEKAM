@@ -1,0 +1,17 @@
+/* modal
+*******************************************************************/
+
+.modal-search {
+  margin-right: 40px;
+  .close {
+    position: absolute;
+    left: 100%;
+    font-size: 18px;
+    margin: 15px;
+    top: 0;
+  }
+}
+
+.modal-backdrop {
+  background-color: $app-color-1
+}

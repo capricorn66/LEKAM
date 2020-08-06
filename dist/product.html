@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+
+    <title>Lekam - Dbamy o twoje zdrowie każdego dnia</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+<link href="css/vendor.min.css" rel="stylesheet"><link href="css/style.min.css" rel="stylesheet"></head>
+<body>
+
+<header>
+    <div class="container">
+        <nav class="navbar navbar-expand-md">
+
+            <a class="brand" href="#">
+                <img src="./images/lekam.png" alt="Lekam">
+                <small>Dbamy o twoje zdrowie każdego dnia</small>
+            </a>
+
+            <div class="d-flex flex-column flex-xl-row align-self-lg-end ml-lg-auto w-100">
+
+                <div class="d-flex align-items-center order-xl-last mt-auto ml-auto mb-md-40 mb-lg-0 mb-30 mb-md-0">
+                    <a href="" role="button" class="search-link" data-toggle="modal" data-target="#searchModal">
+                        <i class="icon-search mt-lg-n1"></i>
+                    </a>
+
+                    <div class="dropdown">
+                        <button class="btn btn-lang dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="icon-world-wide"></i>
+                        </button>
+                        <ul class="nav-lang dropdown-menu dropdown-menu-right">
+                            <li class="nav-item active">
+                                <a href="" class="nav-link">PL</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">EN</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse ml-lg-auto" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">O Nas</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Produkty
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="productsDropdown">
+                                <a class="dropdown-item" href="#">Aktualności</a>
+                                <a class="dropdown-item" href="#">LEKAM w mediach</a>
+                                <a class="dropdown-item" href="#">LEKAM informuje</a>
+                                <a class="dropdown-item" href="#">Nagrody</a>
+                                <a class="dropdown-item" href="#">Magazyny Nasze Zdrowie</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">R&D</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="pressDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Centrum Prasowe
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="pressDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kariera</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </nav>
+    </div>
+</header>
+
+<div class="bg-gray-200">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Strona główna</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Produkty</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<main>
+    <div class="container">
+
+        <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="pills-category-tab" data-toggle="pill" href="#pills-category" role="tab" aria-controls="pills-category" aria-selected="true">Wyszukaj wg kategorii</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-names-tab" data-toggle="pill" href="#pills-names" role="tab" aria-controls="pills-names" aria-selected="false">Wyszukaj wg nazwy</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-search-tab" data-toggle="pill" href="#pills-search" role="tab" aria-controls="pills-search" aria-selected="false">Wyszukaj alfabetycznie</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-therapeutics-tab" data-toggle="pill" href="#pills-therapeutics" role="tab" aria-controls="pills-therapeutics" aria-selected="false">Obszary terapeutyczne</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="false">Wszystkie produkty</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-category" role="tabpanel" aria-labelledby="pills-category-tab">
+
+                <div class="row justify-content-center">
+                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <a href="" class="products-category active">
+                            <span class="products-category-img">
+                                <img src="images/category-prescription.svg" alt="leki na receptę">
+                            </span>
+                            <span class="products-category-name">leki na receptę</span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <a href="" class="products-category">
+                            <span class="products-category-img">
+                                <img src="images/category-no-prescription.svg" alt="leki bez recepty">
+                            </span>
+                            <span class="products-category-name">leki bez recepty</span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <a href="" class="products-category">
+                            <span class="products-category-img">
+                                <img src="images/category-supplements.svg" alt="suplementy diety">
+                            </span>
+                            <span class="products-category-name">suplementy diety</span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <a href="" class="products-category">
+                            <span class="products-category-img">
+                                <img src="images/category-cosmetics.svg" alt="kosmetyki">
+                            </span>
+                            <span class="products-category-name">kosmetyki</span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <a href="" class="products-category">
+                            <span class="products-category-img">
+                                <img src="images/category-goods-medical.svg" alt="wyroby medyczne">
+                            </span>
+                            <span class="products-category-name">wyroby medyczne</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="pills-names" role="tabpanel" aria-labelledby="pills-names-tab">
+
+                <form>
+                    <div class="form-group row justify-content-center">
+                        <label for="productSearch" class="col-lg-4 col-form-label app-color-1">Wyszukaj w całym katalogu produktów</label>
+                        <div class="col-lg-6">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="productSearch" placeholder="Wpisz nazwę szukanego produktu" aria-label="nazwa produktu" aria-describedby="inputPassword">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-primary mb-2">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="tab-pane fade" id="pills-search" role="tabpanel" aria-labelledby="pills-search-tab">
+
+                <div class="d-flex justify-content-center">
+                    <a href="" class="filter-item">A</a>
+                    <a href="" class="filter-item">B</a>
+                    <a href="" class="filter-item active">C</a>
+                    <a href="" class="filter-item">D</a>
+                    <a href="" class="filter-item">E</a>
+                    <a href="" class="filter-item">F</a>
+                    <a href="" class="filter-item">G</a>
+                    <a href="" class="filter-item">H</a>
+                    <a href="" class="filter-item">I</a>
+                    <a href="" class="filter-item">J</a>
+                    <a href="" class="filter-item">K</a>
+                    <a href="" class="filter-item">L</a>
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="pills-therapeutics" role="tabpanel" aria-labelledby="pills-therapeutics-tab">
+
+                <div class="row justify-content-center">
+                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <a href="" class="products-category active">
+                            <span class="products-category-img">
+                                <img src="images/products-psychiatry.svg" alt="psychiatria">
+                            </span>
+                            <span class="products-category-name">psychiatria</span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <a href="" class="products-category">
+                            <span class="products-category-img">
+                                <img src="images/products-pulmonology.svg" alt="pulmonologia">
+                            </span>
+                            <span class="products-category-name">pulmonologia</span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <a href="" class="products-category">
+                            <span class="products-category-img">
+                                <img src="images/products-cardiology.svg" alt="Kardiologia">
+                            </span>
+                            <span class="products-category-name">Kardiologia</span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <a href="" class="products-category">
+                            <span class="products-category-img">
+                                <img src="images/products-ophthalmology.svg" alt="okulistyka">
+                            </span>
+                            <span class="products-category-name">okulistyka</span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <a href="" class="products-category">
+                            <span class="products-category-img">
+                                <img src="images/products-gastroenterology.svg" alt="gastroenterologia">
+                            </span>
+                            <span class="products-category-name">gastroenterologia</span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <a href="" class="products-category">
+                            <span class="products-category-img">
+                                <img src="images/products-dermatology.svg" alt="dermatologia">
+                            </span>
+                            <span class="products-category-name">dermatologia</span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <a href="" class="products-category">
+                            <span class="products-category-img">
+                                <img src="images/products-allergology.svg" alt="alergologia">
+                            </span>
+                            <span class="products-category-name">alergologia</span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <a href="" class="products-category">
+                            <span class="products-category-img">
+                                <img src="images/products-endocrinology.svg" alt="endokrynologia">
+                            </span>
+                            <span class="products-category-name">endokrynologia</span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <a href="" class="products-category">
+                            <span class="products-category-img">
+                                <img src="images/products-gynecology.svg" alt="ginekologia">
+                            </span>
+                            <span class="products-category-name">ginekologia</span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <a href="" class="products-category">
+                            <span class="products-category-img">
+                                <img src="images/products-orthopedics.svg" alt="ortopedia">
+                            </span>
+                            <span class="products-category-name">ortopedia</span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <a href="" class="products-category">
+                            <span class="products-category-img">
+                                <img src="images/products-urology.svg" alt="urologia">
+                            </span>
+                            <span class="products-category-name">urologia</span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <a href="" class="products-category">
+                            <span class="products-category-img">
+                                <img src="images/products-pediatrics.svg" alt="pediatria">
+                            </span>
+                            <span class="products-category-name">pediatria</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">...</div>
+        </div>
+
+        <hr class="mb-80">
+
+        <div class="row">
+            <div class="col-lg-7 mb-40">
+                <div class="mb-40">
+                    <h1 class="app-color-1">Biosteron</h1>
+                    <div class="mt-n20 mb-40">
+                        <strong class="app-color-1">10 mg, 25 mg</strong>
+                    </div>
+
+                    <h2>Co to jest Biosteron?</h2>
+                    <p>Substancją czynną leku Biosteron jest dehydroepiandrosteron (DHEA), który jest hormonem steroidowym
+                        wytwarzanym w nadnerczach i uwalnianym do krwi.
+                        W różnych tkankach DHEA ulega przemianie do aktywnych hormonów płciowych: estrogenów i androgenów.
+                        Największe stężenia DHEA w surowicy występują w okresie młodości (2 i 3 dekada życia), po czym
+                        następuje powolny spadek, do ok. 10-20% u osób w wieku 80 lat.</p>
+
+                    <h2>Wskazania:</h2>
+                    <p>Niedobór dehydroepiandrosteronu (DHEA).</p>
+
+                    <h2>Przeciwskazania:</h2>
+                    <p>Uczulenie (nadwrażliwość) na substancję czynną lub na którykolwiek z pozostałych składników leku
+                        Biosteron, rak piersi, jajnika lub inny nowotwór zależny od estrogenów, łagodny rozrost i rak
+                        gruczołu krokowego, rak sutka u mężczyzn, ciężka niewydolność wątroby, ciężka niewydolność nerek,
+                        okres ciąży i karmienia piersią.</p>
+
+                    <h2>Podmiot odpowiedzialny:</h2>
+                    <p>Przedsiębiorstwo Farmaceutyczne LEK-AM Sp. z o.o.<br>
+                        ul. Ostrzykowizna 14A<br>
+                        05-170 Zakroczym</p>
+
+                    <strong>„Przed użyciem zapoznaj się z treścią ulotki dołączonej do opakowania bądź skonsultuj się z lekarzem
+                        lub farmaceutą, gdyż każdy lek niewłaściwie stosowany zagraża Twojemu życiu lub zdrowiu.”</strong>
+                </div>
+                <a href="" class="btn btn-outline-primary">wróć do listy produktów</a>
+            </div>
+            <div class="col-lg-5 mb-40">
+                <div>
+                    <div class="product-box pb-20">
+                        <div class="product-box-img text-center mb-40">
+                            <a href="images/product.png" data-lightbox="product">
+                                <img src="images/product.png" alt="Biosteron">
+                            </a>
+                            <a href="images/product.png" data-lightbox="product"></a>
+                            <a href="images/product.png" data-lightbox="product"></a>
+                        </div>
+                        <div class="product-box-body mb-30">
+                            <h3 class="font-weight-normal app-color-1">Dla Pacjenta</h3>
+                            <hr>
+                            <div class="d-flex">
+                                <i class="icon-file-pdf font-52 mr-30"></i>
+                                <div class="d-flex flex-column flex-grow-1">
+                                    <a href="" class="d-flex align-items-center gray-600">Ulotka dla Pacjenta <i class="ml-auto icon-download"></i></a>
+                                    <a href="" class="d-flex align-items-center gray-600">Materiał Edukacyjne <i class="ml-auto icon-download"></i></a>
+                                </div>
+                            </div>
+                            <hr>
+                            <h3 class="font-weight-normal app-color-1">Dla Lekarza</h3>
+                            <hr>
+                            <div class="d-flex">
+                                <i class="icon-file-pdf font-52 mr-30"></i>
+                                <div class="d-flex flex-column flex-grow-1">
+                                    <a href="" class="d-flex align-items-center gray-600">ChPL <i class="ml-auto icon-download"></i></a>
+                                    <a href="" class="d-flex align-items-center gray-600">Materiał Edukacyjne <i class="ml-auto icon-download"></i></a>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="product-box-footer">
+                            <a href="" role="button" class="no-wrap mb-30"><i class="icon-question font-20 mr-2"></i> Zapytaj o produkt</a>
+                            <a href="" class="btn btn-primary ml-auto no-wrap mb-30"><i class="icon-cart font-20 mr-2"></i> Kup w sklepie</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="row mb-60">
+            <div class="col-lg-2 mb-20">
+                <a class="brand" href="#">
+                    <img src="./images/lekam-footer.png" alt="Lekam" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-12 d-lg-none mb-20">
+                <hr>
+            </div>
+            <div class="col-sm-6 col-lg-4 vr mb-20">
+                LEK AM Sp. z.o.o.<br>
+                Al. Jana Pawła II 80  |  00-175 Warszawa<br>
+                Tel +48 22 464 45 00  |  Email: biuro@lekam.pl<br>
+            </div>
+            <div class="col-sm-6 col-lg-6 vr mb-20">
+                Nasze metody produkcji oraz laboratoria spełniają wymogi Dobrych Praktyk Produkcyjnych (GMP) i Dobrych Praktyk Laboratoryjnych.
+            </div>
+        </div>
+        <div class="row mb-40">
+            <div class="col-sm-6 col-md-4 col-lg-2 mb-40">
+                <h6><a href="">O Nas</a></h6>
+                <a href="" class="nav-link">Historia</a>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 mb-40">
+                <h6><a href="">Produkty</a></h6>
+                <a href="" class="nav-link">Leki na receptę</a>
+                <a href="" class="nav-link">Leki bez recepty</a>
+                <a href="" class="nav-link">Suplementy Diety</a>
+                <a href="" class="nav-link">Kosmetyki</a>
+                <a href="" class="nav-link">Wyroby medyczne</a>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 mb-40">
+                <h6><a href="">R&D</a></h6>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 mb-40">
+                <h6><a href="">Centrum Prasowe</a></h6>
+                <a href="" class="nav-link">Aktualności</a>
+                <a href="" class="nav-link">LEKAM w mediach</a>
+                <a href="" class="nav-link">LEKAM informuje</a>
+                <a href="" class="nav-link">Nagrody</a>
+                <a href="" class="nav-link">Magazyny Nasze Zdrowie</a>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 mb-40">
+                <h6><a href="">Kariera</a></h6>
+                <a href="" class="nav-link">Dlaczego LEKAM</a>
+                <a href="" class="nav-link">Oferty Pracy</a>
+                <a href="" class="nav-link">Staże i praktyki</a>
+                <a href="" class="nav-link">Etapy Rekrutacji</a>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 mb-40">
+                <h6><a href="">Kontakt</a></h6>
+                <a href="" class="nav-link">Dane teleadresowe</a>
+                <a href="" class="nav-link">Kontakt dla prasy</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-nav">
+                <a href="" class="footer-bottom-link">Copyright © Lek-am</a>
+                <a href="" class="footer-bottom-link">Polityka Prywatności</a>
+                <a href="" class="footer-bottom-link">Created by Enigmatis</a>
+                <a href="" class="footer-bottom-link">ZGŁOŚ DZIAŁANIE NIEPORZĄDANE</a>
+                <a href="" class="footer-bottom-link"><i class="icon-social-linkedIn"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="cookies">
+    <div class="container d-flex flex-column flex-sm-row">
+        <i class="icon-cookies mr-4"></i>
+        <div class="mr-4">
+            <strong class="h4">Ważne: Strona wykorzystuje pliki cookies.</strong>
+            <p>Używamy informacji zapisanych za pomocą cookies i podobnych technologii m.in. w celach reklamowych i
+                statystycznych oraz w celu dostosowania serwisu do indywidualnych potrzeb użytkowników. Korzystanie z
+                witryny bez zmiany ustawień dotyczących cookies oznacza, że będą one zamieszczane w Państwa urządzeniu
+                końcowym. Możecie Państwo dokonać w każdym czasie zmiany ustawień dotyczących cookies. Więcej informacji
+                można znaleźć w naszej "<a href="">Polityce Cookies</a>".</p>
+        </div>
+        <div class="ml-sm-auto align-self-sm-end mb-3">
+            <a class="btn btn-secondary">Zamknij</a>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content modal-search">
+
+            <div class="input-group input-group-lg">
+                <input type="text" class="form-control border-0" placeholder="Szukaj" aria-label="Wyszukaj w serwisie">
+                <div class="input-group-append">
+                    <button class="btn" type="button" id="button-addon2">
+                        <i class="icon-search app-color-1"></i>
+                    </button>
+                </div>
+            </div>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" class="icon-close white"></span>
+            </button>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="bs4-xs d-block d-sm-none"></div>
+<div class="bs4-sm d-none d-sm-block d-md-none"></div>
+<div class="bs4-md d-none d-md-block d-lg-none"></div>
+<div class="bs4-lg d-none d-lg-block d-xl-none"></div>
+<div class="bs4-xl d-none d-xl-block"></div>
+
+<script type="text/javascript" src="js/vendor.min.js"></script><script type="text/javascript" src="js/script.min.js"></script><script type="text/javascript" src="js/style.min.js"></script></body>
+</html>

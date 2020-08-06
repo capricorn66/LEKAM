@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+
+    <title>Lekam - Dbamy o twoje zdrowie każdego dnia</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-md">
+
+                <a class="brand" href="#">
+                    <img src="./images/lekam.png" alt="Lekam">
+                    <small>Dbamy o twoje zdrowie każdego dnia</small>
+                </a>
+
+                <div class="d-flex flex-column flex-xl-row align-self-lg-end ml-lg-auto w-100">
+
+                    <div class="d-flex align-items-center order-xl-last mt-auto ml-auto mb-md-40 mb-lg-0 mb-30 mb-md-0">
+                        <a href="" role="button" class="search-link" data-toggle="modal" data-target="#searchModal">
+                            <i class="icon-search mt-lg-n1"></i>
+                        </a>
+
+                        <div class="dropdown">
+                            <button class="btn btn-lang dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="icon-world-wide"></i>
+                            </button>
+                            <ul class="nav-lang dropdown-menu dropdown-menu-right">
+                                <li class="nav-item active">
+                                    <a href="" class="nav-link">PL</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">EN</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse ml-lg-auto" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">O Nas</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Produkty
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="productsDropdown">
+                                    <a class="dropdown-item" href="#">Aktualności</a>
+                                    <a class="dropdown-item" href="#">LEKAM w mediach</a>
+                                    <a class="dropdown-item" href="#">LEKAM informuje</a>
+                                    <a class="dropdown-item" href="#">Nagrody</a>
+                                    <a class="dropdown-item" href="#">Magazyny Nasze Zdrowie</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">R&D</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="pressDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Centrum Prasowe
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="pressDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Kariera</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <section class="jumbotron swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url('./images/jumbotron-1.jpg') ">
+                <div class="video-bg">
+                    <video width="100%" height="100%" preload="auto" autoplay loop muted>
+                        <source src="./media/video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="container">
+                    <div class="row w-100 no-gutters">
+                        <div class="col-11 col-sm-10 col-md-8 col-lg-6">
+                            <div class="bg">
+                                <h1>Zawsze najzdrowsze rozwiązania</h1>
+                                <p class="lead">Phasellus rhoncus arcu ipsum, faucibus dignissim ipsum pharetra et.</p>
+                                <a href="" class="btn btn-outline-primary">Więcej</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url('./images/jumbotron-2.jpg') ">
+                <div class="container">
+                    <div class="row w-100 no-gutters">
+                        <div class="col-11 col-sm-10 col-md-8 col-lg-6">
+                            <div class="bg">
+                                <h1>Zawsze najzdrowsze rozwiązania</h1>
+                                <p class="lead">Phasellus rhoncus arcu ipsum, faucibus dignissim ipsum pharetra et.</p>
+                                <a href="" class="btn btn-outline-primary">Więcej</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url('./images/jumbotron-3.jpg') ">
+                <div class="container">
+                    <div class="row w-100 no-gutters">
+                        <div class="col-11 col-sm-10 col-md-8 col-lg-6">
+                            <div class="bg">
+                                <h1>Zawsze najzdrowsze rozwiązania</h1>
+                                <p class="lead">Phasellus rhoncus arcu ipsum, faucibus dignissim ipsum pharetra et.</p>
+                                <a href="" class="btn btn-outline-primary">Więcej</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <section class="about-wall d-flex align-items-center">
+        <div class="container">
+            <div class="row gutter-lg">
+                <div class="col-lg-6">
+                    <a href="" class="news-box">
+                        <h2 class="news-box-title">O nas</h2>
+                        <div class="news-box-body">
+                            <p>Przedsiębiorstwo Farmaceutyczne
+                                LEK-AM Sp. z o.o.  jest jedną z najdynamiczniej rozwijających  się firm farmaceutycznych na polskim rynku.</p>
+                            <p>Obecnie firma zatrudnia ponad 440  osób,
+                                a liczba ta sukcesywnie się zwiększa wraz z rozbudową poszczególnych działów firmy.</p>
+                            <p>Przedsiębiorstwo Farmaceutyczne
+                                LEK-AM Sp. z o.o.  jest jedną z najdynamiczniej rozwijających  się firm farmaceutycznych na polskim rynku.</p>
+                            <p>Obecnie firma zatrudnia ponad 440  osób,
+                                a liczba ta sukcesywnie się zwiększa wraz z rozbudową poszczególnych działów firmy.</p>
+                        </div>
+                        <div class="news-box-footer">
+                            <span class="btn btn-outline-primary">Więcej</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6 d-flex">
+                    <div class="position-relative w-100">
+                        <div class="box-img box-img-right" style="background-image: url('images/aboutus.jpg')"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quality-wall swiper-container">
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="container">
+                    <div class="row gutter-lg">
+                        <div class="col-lg-6 d-flex">
+                            <div class="position-relative w-100">
+                                <div class="box-img box-img-left" style="background-image: url('images/quality.jpg')"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <a href="" class="news-box">
+                                <h2 class="news-box-title">Naszą podstawową wartością jest jakość</h2>
+                                <div class="news-box-body">
+                                    <p>Zakład produkcyjny wytwarza nowoczesne leki odtwórcze, które spełniaja rygorystyczne wymogi jakościowe obowiązujące w Unii Europejskiej. W zachowaniu wysokich norm jakości pomaga, zlokalizowane w fabryce, wysokiej klasy laboratorium.</p>
+                                </div>
+                                <div class="news-box-footer">
+                                    <span class="btn btn-outline-primary">Więcej</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="container">
+                    <div class="row gutter-lg">
+                        <div class="col-lg-6 d-flex">
+                            <div class="position-relative w-100">
+                                <div class="box-img box-img-left" style="background-image: url('images/quality.jpg')"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <a href="" class="news-box">
+                                <h2 class="news-box-title">Naszą podstawową wartością jest jakość</h2>
+                                <div class="news-box-body">
+                                    <p>Zakład produkcyjny wytwarza nowoczesne leki odtwórcze, które spełniaja rygorystyczne wymogi jakościowe obowiązujące w Unii Europejskiej. W zachowaniu wysokich norm jakości pomaga, zlokalizowane w fabryce, wysokiej klasy laboratorium.</p>
+                                </div>
+                                <div class="news-box-footer">
+                                    <span class="btn btn-outline-primary">Więcej</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="container">
+                    <div class="row gutter-lg">
+                        <div class="col-lg-6 d-flex">
+                            <div class="position-relative w-100">
+                                <div class="box-img box-img-left" style="background-image: url('images/quality.jpg')"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <a href="" class="news-box">
+                                <h2 class="news-box-title">Naszą podstawową wartością jest jakość</h2>
+                                <div class="news-box-body">
+                                    <p>Zakład produkcyjny wytwarza nowoczesne leki odtwórcze, które spełniaja rygorystyczne wymogi jakościowe obowiązujące w Unii Europejskiej. W zachowaniu wysokich norm jakości pomaga, zlokalizowane w fabryce, wysokiej klasy laboratorium.</p>
+                                </div>
+                                <div class="news-box-footer">
+                                    <span class="btn btn-outline-primary">Więcej</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+    </section>
+
+    <section class="news-wall">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-4 d-flex mb-30">
+                    <div class="box w-100" id="box-novelty">
+                        <div class="d-flex justify-content-between">
+                            <h2 class="box-title app-color-3">
+                                Nowości
+                            </h2>
+                            <div class="d-flex justify-content-end">
+                                <div class="swiper-button-prev app-color-3 mx-10">
+                                    <i class="icon-arrow-left"></i>
+                                </div>
+                                <div class="swiper-button-next app-color-3 mx-10">
+                                    <i class="icon-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-container w-100 flex-grow-1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide d-flex flex-column">
+                                    <div class="box-body">
+                                        <h3>Biosteron</h3>
+                                        <small>10 mg, 25 mg</small>
+                                        <div class="text-center">
+                                            <img src="images/product.png" alt="Biosteron" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="box-footer">
+                                        <a href="" class="btn btn-outline-secondary">Więcej</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-flex flex-column">
+                                    <div class="box-body">
+                                        <h3>Biosteron</h3>
+                                        <small>10 mg, 25 mg</small>
+                                        <div class="text-center">
+                                            <img src="images/product.png" alt="Biosteron" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="box-footer">
+                                        <a href="" class="btn btn-outline-secondary">Więcej</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-flex flex-column">
+                                    <div class="box-body">
+                                        <h3>Biosteron</h3>
+                                        <small>10 mg, 25 mg</small>
+                                        <div class="text-center">
+                                            <img src="images/product.png" alt="Biosteron" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="box-footer">
+                                        <a href="" class="btn btn-outline-secondary">Więcej</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 d-flex mb-30">
+                    <div class="box w-100" id="box-news">
+                        <div class="d-flex justify-content-between">
+                            <h2 class="box-title app-color-1">
+                                Aktualności
+                            </h2>
+                            <div class="d-flex justify-content-end">
+                                <div class="swiper-button-prev app-color-1 mx-10">
+                                    <i class="icon-arrow-left"></i>
+                                </div>
+                                <div class="swiper-button-next app-color-1 mx-10">
+                                    <i class="icon-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-container w-100 flex-grow-1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide d-flex flex-column">
+                                    <div class="box-body">
+                                        <small>28.01.2020</small>
+                                        <h3>Proin placerat maximus nibh</h3>
+                                        <p>Cras lacinia quis ligula eu pulvinar. Donec id viverra orci, sed sollicitudin neque. Fusce nisi urna, rutrum et dapibus a, rhoncus vel sapien. Cras sit amet purus ac ipsum dapibus consectetur sit amet ac orci. Duis molestie urna a massa fringilla, vel interdum arcu sodales. Morbi non, rutrum vel tellus.</p>
+                                    </div>
+                                    <div class="box-footer">
+                                        <a href="" class="btn btn-outline-primary">Więcej</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-flex flex-column">
+                                    <div class="box-body">
+                                        <small>28.01.2020</small>
+                                        <h3>Proin placerat maximus nibh</h3>
+                                        <p>Cras lacinia quis ligula eu pulvinar. Donec id viverra orci, sed sollicitudin neque. Fusce nisi urna, rutrum et dapibus a, rhoncus vel sapien. Cras sit amet purus ac ipsum dapibus consectetur sit amet ac orci. Duis molestie urna a massa fringilla, vel interdum arcu sodales. Morbi non, rutrum vel tellus.</p>
+                                    </div>
+                                    <div class="box-footer">
+                                        <a href="" class="btn btn-outline-primary">Więcej</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-flex flex-column">
+                                    <div class="box-body">
+                                        <small>28.01.2020</small>
+                                        <h3>Proin placerat maximus nibh</h3>
+                                        <p>Cras lacinia quis ligula eu pulvinar. Donec id viverra orci, sed sollicitudin neque. Fusce nisi urna, rutrum et dapibus a, rhoncus vel sapien. Cras sit amet purus ac ipsum dapibus consectetur sit amet ac orci. Duis molestie urna a massa fringilla, vel interdum arcu sodales. Morbi non, rutrum vel tellus.</p>
+                                    </div>
+                                    <div class="box-footer">
+                                        <a href="" class="btn btn-outline-primary">Więcej</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex mb-30">
+                    <div class="box w-100 bg-transparent" id="box-products">
+                        <h2 class="box-title app-color-1">
+                            Obszary Terapeutyczne
+                        </h2>
+                        <div class="box-body">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <a href="" class="products-category">
+                                                    <span class="products-category-img">
+                                                        <img src="images/products-psychiatry.svg" alt="psychiatria">
+                                                    </span>
+                                                    <span class="products-category-name">psychiatria</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="" class="products-category">
+                                                    <span class="products-category-img">
+                                                        <img src="images/products-pulmonology.svg" alt="pulmonologia">
+                                                    </span>
+                                                    <span class="products-category-name">pulmonologia</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="" class="products-category">
+                                                    <span class="products-category-img">
+                                                        <img src="images/products-cardiology.svg" alt="Kardiologia">
+                                                    </span>
+                                                    <span class="products-category-name">Kardiologia</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="" class="products-category">
+                                                    <span class="products-category-img">
+                                                        <img src="images/products-ophthalmology.svg" alt="okulistyka">
+                                                    </span>
+                                                    <span class="products-category-name">okulistyka</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="" class="products-category">
+                                                    <span class="products-category-img">
+                                                        <img src="images/products-gastroenterology.svg" alt="gastroenterologia">
+                                                    </span>
+                                                    <span class="products-category-name">gastroenterologia</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="" class="products-category">
+                                                    <span class="products-category-img">
+                                                        <img src="images/products-dermatology.svg" alt="dermatologia">
+                                                    </span>
+                                                    <span class="products-category-name">dermatologia</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <a href="" class="products-category">
+                                                    <span class="products-category-img">
+                                                        <img src="images/products-allergology.svg" alt="alergologia">
+                                                    </span>
+                                                    <span class="products-category-name">alergologia</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="" class="products-category">
+                                                    <span class="products-category-img">
+                                                        <img src="images/products-endocrinology.svg" alt="endokrynologia">
+                                                    </span>
+                                                    <span class="products-category-name">endokrynologia</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="" class="products-category">
+                                                    <span class="products-category-img">
+                                                        <img src="images/products-gynecology.svg" alt="ginekologia">
+                                                    </span>
+                                                    <span class="products-category-name">ginekologia</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="" class="products-category">
+                                                    <span class="products-category-img">
+                                                        <img src="images/products-orthopedics.svg" alt="ortopedia">
+                                                    </span>
+                                                    <span class="products-category-name">ortopedia</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="" class="products-category">
+                                                    <span class="products-category-img">
+                                                        <img src="images/products-urology.svg" alt="urologia">
+                                                    </span>
+                                                    <span class="products-category-name">urologia</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="" class="products-category">
+                                                    <span class="products-category-img">
+                                                        <img src="images/products-pediatrics.svg" alt="pediatria">
+                                                    </span>
+                                                    <span class="products-category-name">pediatria</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                    <div class="swiper-button-prev app-color-1 mx-10">
+                                        <i class="icon-arrow-left"></i>
+                                    </div>
+                                    <div class="swiper-button-next app-color-1 mx-10">
+                                        <i class="icon-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-wall">
+        <div class="container">
+            <h1>Zobacz serwisy produktowe</h1>
+
+            <div class="d-flex align-items-center">
+                <div class="swiper-button-prev app-color-1 mr-40">
+                    <i class="icon-arrow-left"></i>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/products/KatelinSR.png" class="img-fluid" height="114" width="441"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/products/KatelinSR.png" class="img-fluid" height="114" width="441"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/products/KatelinSR.png" class="img-fluid" height="114" width="441"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/products/KatelinSR.png" class="img-fluid" height="114" width="441"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/products/KatelinSR.png" class="img-fluid" height="114" width="441"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/products/KatelinSR.png" class="img-fluid" height="114" width="441"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/products/KatelinSR.png" class="img-fluid" height="114" width="441"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/products/KatelinSR.png" class="img-fluid" height="114" width="441"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/products/KatelinSR.png" class="img-fluid" height="114" width="441"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/products/KatelinSR.png" class="img-fluid" height="114" width="441"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next app-color-1 ml-40">
+                    <i class="icon-arrow-right"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row mb-60">
+                <div class="col-lg-2 mb-20">
+                    <a class="brand" href="#">
+                        <img src="./images/lekam-footer.png" alt="Lekam" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-12 d-lg-none mb-20">
+                    <hr>
+                </div>
+                <div class="col-sm-6 col-lg-4 vr mb-20">
+                    LEK AM Sp. z.o.o.<br>
+                    Al. Jana Pawła II 80  |  00-175 Warszawa<br>
+                    Tel +48 22 464 45 00  |  Email: biuro@lekam.pl<br>
+                </div>
+                <div class="col-sm-6 col-lg-6 vr mb-20">
+                    Nasze metody produkcji oraz laboratoria spełniają wymogi Dobrych Praktyk Produkcyjnych (GMP) i Dobrych Praktyk Laboratoryjnych.
+                </div>
+            </div>
+            <div class="row mb-40">
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-40">
+                    <h6><a href="">O Nas</a></h6>
+                    <a href="" class="nav-link">Historia</a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-40">
+                    <h6><a href="">Produkty</a></h6>
+                    <a href="" class="nav-link">Leki na receptę</a>
+                    <a href="" class="nav-link">Leki bez recepty</a>
+                    <a href="" class="nav-link">Suplementy Diety</a>
+                    <a href="" class="nav-link">Kosmetyki</a>
+                    <a href="" class="nav-link">Wyroby medyczne</a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-40">
+                    <h6><a href="">R&D</a></h6>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-40">
+                    <h6><a href="">Centrum Prasowe</a></h6>
+                    <a href="" class="nav-link">Aktualności</a>
+                    <a href="" class="nav-link">LEKAM w mediach</a>
+                    <a href="" class="nav-link">LEKAM informuje</a>
+                    <a href="" class="nav-link">Nagrody</a>
+                    <a href="" class="nav-link">Magazyny Nasze Zdrowie</a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-40">
+                    <h6><a href="">Kariera</a></h6>
+                    <a href="" class="nav-link">Dlaczego LEKAM</a>
+                    <a href="" class="nav-link">Oferty Pracy</a>
+                    <a href="" class="nav-link">Staże i praktyki</a>
+                    <a href="" class="nav-link">Etapy Rekrutacji</a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 mb-40">
+                    <h6><a href="">Kontakt</a></h6>
+                    <a href="" class="nav-link">Dane teleadresowe</a>
+                    <a href="" class="nav-link">Kontakt dla prasy</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-nav">
+                    <a href="" class="footer-bottom-link">Copyright © Lek-am</a>
+                    <a href="" class="footer-bottom-link">Polityka Prywatności</a>
+                    <a href="" class="footer-bottom-link">Created by Enigmatis</a>
+                    <a href="" class="footer-bottom-link">ZGŁOŚ DZIAŁANIE NIEPORZĄDANE</a>
+                    <a href="" class="footer-bottom-link"><i class="icon-social-linkedIn"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cookies">
+        <div class="container d-flex flex-column flex-sm-row">
+            <i class="icon-cookies mr-4"></i>
+            <div class="mr-4">
+                <strong class="h4">Ważne: Strona wykorzystuje pliki cookies.</strong>
+                <p>Używamy informacji zapisanych za pomocą cookies i podobnych technologii m.in. w celach reklamowych i
+                    statystycznych oraz w celu dostosowania serwisu do indywidualnych potrzeb użytkowników. Korzystanie z
+                    witryny bez zmiany ustawień dotyczących cookies oznacza, że będą one zamieszczane w Państwa urządzeniu
+                    końcowym. Możecie Państwo dokonać w każdym czasie zmiany ustawień dotyczących cookies. Więcej informacji
+                    można znaleźć w naszej "<a href="">Polityce Cookies</a>".</p>
+            </div>
+            <div class="ml-sm-auto align-self-sm-end mb-3">
+                <a class="btn btn-secondary">Zamknij</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content modal-search">
+
+                <div class="input-group input-group-lg">
+                    <input type="text" class="form-control border-0" placeholder="Szukaj" aria-label="Wyszukaj w serwisie">
+                    <div class="input-group-append">
+                        <button class="btn" type="button" id="button-addon2">
+                            <i class="icon-search app-color-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="icon-close white"></span>
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bs4-xs d-block d-sm-none"></div>
+    <div class="bs4-sm d-none d-sm-block d-md-none"></div>
+    <div class="bs4-md d-none d-md-block d-lg-none"></div>
+    <div class="bs4-lg d-none d-lg-block d-xl-none"></div>
+    <div class="bs4-xl d-none d-xl-block"></div>
+
+</body>
+</html>

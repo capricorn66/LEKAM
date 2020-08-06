@@ -1,0 +1,34 @@
+/* reboot
+*******************************************************************/
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  color: $body-color;
+  @include media-breakpoint-only(xs) {
+    padding-top: 87px;
+  }
+  @include media-breakpoint-only(sm) {
+    padding-top: 118px;
+  }
+  @include media-breakpoint-only(md) {
+    padding-top: 165px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-top: 132px;
+  }
+}
+
+a {
+  color: $app-color-1;
+  &:focus,
+  &:hover {
+    color: darken($app-color-1, 10%)
+  }
+}
+
+hr {
+  border-top-color: $gray-200;
+}

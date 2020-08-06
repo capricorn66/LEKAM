@@ -1,0 +1,40 @@
+/* tabs
+*******************************************************************/
+
+main {
+  .nav-pills {
+    margin-bottom: 30px;
+    padding: 50px 0;
+    border-bottom: 1px solid $gray-200;
+    .nav-item {
+      position: relative;
+      margin: 0 20px 10px;
+      .nav-link {
+        padding: 2px 20px;
+        border: 1px solid $app-color-1;
+        color: $app-color-1;
+        &.active {
+          background: $app-color-1;
+          color: $white;
+        }
+      }
+    }
+  }
+  .tab-content {
+    margin-bottom: 40px;
+  }
+
+  .filter-item {
+    margin: 10px;
+    color: rgba($body-color,.7);
+    font-size: 18px;
+    font-weight: 500;
+    &:focus,
+    &:hover,
+    &.active {
+      color: $app-color-1;
+      text-decoration: none;
+    }
+  }
+
+}

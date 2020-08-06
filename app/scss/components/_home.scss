@@ -1,0 +1,129 @@
+/* home
+*******************************************************************/
+
+.news-wall {
+
+
+}
+
+.products-wall {
+  margin-bottom: 30px;
+  h1 {
+    color: $app-color-1;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+.about-wall {
+
+
+}
+
+.quality-wall {
+
+}
+
+.swiper-container.quality-wall,
+.swiper-container.about-wall,
+.quality-wall,
+.news-wall,
+.products-wall,
+.about-wall {
+  position: relative;
+  background: $white;
+  padding: 80px 0;
+  @include media-breakpoint-only(xs) {
+    padding: 40px 0;
+  }
+  @include media-breakpoint-only(sm) {
+    padding: 60px 0;
+  }
+  @media (max-height: 780px) and (min-width: 768px) {
+    padding: 40px 0;
+  }
+  @media (max-height: 740px) and (min-width: 768px) {
+    padding: 60px 0;
+  }
+}
+
+.swiper-container.quality-wall,
+.swiper-container.about-wall {
+  padding-bottom: 160px;
+  @include media-breakpoint-only(xs) {
+    padding-bottom: 80px;
+  }
+  @include media-breakpoint-only(sm) {
+    padding-bottom: 120px;
+  }
+  @media (max-height: 780px) and (min-width: 768px) {
+    padding-bottom: 80px;
+  }
+  @media (max-height: 740px) and (min-width: 768px) {
+    padding-bottom: 120px;
+  }
+}
+
+.quality-wall,
+.about-wall {
+  .container {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 15px;
+      right: 15px;
+      border-bottom: 1px solid $gray-300;
+      bottom: -80px;
+      @include media-breakpoint-only(xs) {
+        bottom: -40px;
+      }
+      @include media-breakpoint-only(sm) {
+        bottom: -60px;
+      }
+      @media (max-height: 780px) and (min-width: 768px) {
+        bottom: -40px;
+      }
+      @media (max-height: 740px) and (min-width: 768px) {
+        bottom: -60px;
+      }
+    }
+  }
+  .box-img {
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    &.box-img-right {
+      border-radius: 8px 0 0 8px;
+      left: 0;
+    }
+    &.box-img-left {
+      border-radius: 0 8px 8px 0;
+      right: 0;
+    }
+    width: calc(50vw - 15px);
+    background-size: cover;
+    background-position: top center;
+  }
+}
+
+.swiper-container.quality-wall,
+.swiper-container.about-wall {
+  .container {
+    &::after {
+      bottom: -160px;
+      @include media-breakpoint-only(xs) {
+        bottom: -80px;
+      }
+      @include media-breakpoint-only(sm) {
+        bottom: -120px;
+      }
+      @media (max-height: 780px) and (min-width: 768px) {
+        bottom: -80px;
+      }
+      @media (max-height: 740px) and (min-width: 768px) {
+        bottom: -120px;
+      }
+    }
+  }
+}

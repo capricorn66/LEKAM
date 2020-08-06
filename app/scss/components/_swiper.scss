@@ -1,0 +1,14 @@
+/* swiper
+*******************************************************************/
+
+.swiper-button-next,
+.swiper-button-prev {
+  opacity: .6;
+  &:focus,
+  &:hover {
+    opacity: 1;
+  }
+  &.swiper-button-disabled {
+    opacity: .2;
+  }
+}

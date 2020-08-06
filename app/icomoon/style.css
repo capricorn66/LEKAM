@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?qnvrfn');
+  src:  url('fonts/icomoon.eot?qnvrfn#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?qnvrfn') format('truetype'),
+    url('fonts/icomoon.woff?qnvrfn') format('woff'),
+    url('fonts/icomoon.svg?qnvrfn#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cart:before {
+  content: "\e923";
+}
+.icon-question:before {
+  content: "\e924";
+}
+.icon-cookies:before {
+  content: "\e910";
+}
+.icon-search:before {
+  content: "\e922";
+}
+.icon-file-csv:before {
+  content: "\e907";
+}
+.icon-file-doc:before {
+  content: "\e911";
+}
+.icon-file-docx:before {
+  content: "\e912";
+}
+.icon-file-iso:before {
+  content: "\e913";
+}
+.icon-file-jpg:before {
+  content: "\e914";
+}
+.icon-file-mp3:before {
+  content: "\e915";
+}
+.icon-file-mp4:before {
+  content: "\e916";
+}
+.icon-file-pdf:before {
+  content: "\e917";
+}
+.icon-file-png:before {
+  content: "\e918";
+}
+.icon-file-ppt:before {
+  content: "\e919";
+}
+.icon-file-pptx:before {
+  content: "\e91a";
+}
+.icon-file-svg:before {
+  content: "\e91b";
+}
+.icon-file-tiff:before {
+  content: "\e91c";
+}
+.icon-file-txt:before {
+  content: "\e91d";
+}
+.icon-file-xls:before {
+  content: "\e91e";
+}
+.icon-file-xlsx:before {
+  content: "\e91f";
+}
+.icon-file-zip:before {
+  content: "\e920";
+}
+.icon-file:before {
+  content: "\e921";
+}
+.icon-arrow-bottom:before {
+  content: "\e900";
+}
+.icon-arrow-left:before {
+  content: "\e901";
+}
+.icon-arrow-right:before {
+  content: "\e902";
+}
+.icon-arrow-top:before {
+  content: "\e903";
+}
+.icon-check:before {
+  content: "\e904";
+}
+.icon-close:before {
+  content: "\e905";
+}
+.icon-download:before {
+  content: "\e906";
+}
+.icon-info:before {
+  content: "\e908";
+}
+.icon-mail:before {
+  content: "\e909";
+}
+.icon-portfolio:before {
+  content: "\e90a";
+}
+.icon-social-facebook:before {
+  content: "\e90b";
+}
+.icon-social-linkedIn:before {
+  content: "\e90c";
+}
+.icon-time-35:before {
+  content: "\e90d";
+}
+.icon-world-wide:before {
+  content: "\e90e";
+}
+.icon-zoom:before {
+  content: "\e90f";
+}

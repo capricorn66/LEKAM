@@ -1,0 +1,228 @@
+/* main
+*******************************************************************/
+
+*:focus {
+  box-shadow: none !important;
+}
+
+main {
+  color: $body-color;
+  padding-bottom: 60px;
+  line-height: 1.6;
+  font-weight: 300;
+  h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 24px;
+    margin-bottom: .8em;
+  }
+  h3 {
+    font-size: 22px;
+    margin-bottom: 1em;
+  }
+  h4 {
+    font-size: 20px;
+    margin-bottom: 1em;
+  }
+  h5 {
+    font-size: 18px;
+    margin-bottom: 1em;
+  }
+  h6 {
+    font-size: 16px;
+    margin-bottom: 1em;
+  }
+  .table {
+    th {
+      font-weight: 400;
+    }
+  }
+
+  ul + h1,
+  ul + h2,
+  ul + h3,
+  ul + h4,
+  ul + h5,
+  ul + h6,
+  p + h1,
+  p + h2,
+  p + h3,
+  p + h4,
+  p + h5,
+  p + h6 {
+    margin-top: 1.6em;
+  }
+
+  h2 + .date {
+    margin-top: -1.6em;
+    margin-bottom: 1.6em;
+    color: $gray-300;
+  }
+
+  ul:not([class]) {
+    list-style: none;
+    padding-left: 28px;
+    li {
+      margin-bottom: .5rem;
+      &::before {
+        content: "\2022";
+        color: $app-color-1;
+        font-weight: bold;
+        display: inline-block;
+        width: 25px;
+        margin-left: -25px;
+        font-size: 30px;
+        line-height: 0;
+        top: 6px;
+        position: relative;
+      }
+    }
+  }
+
+  label,
+  .col-form-label {
+    font-weight: 400;
+    line-height: 1.2em;
+  }
+
+  .link-with-icon {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 20px 20px 0;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $app-color-1;
+    }
+    i {
+      font-size: 40px;
+      margin-right: 10px;
+      + span {
+        color: $gray-500;
+        line-height: 1.2em;
+      }
+    }
+  }
+
+  .google-map {
+    border: 5px solid $gray-300;
+    margin: 40px 0;
+    iframe {
+      display: block;
+    }
+  }
+
+  .gallery-image {
+    position: relative;
+    display: block;
+    &::before {
+      content: "\e90f";
+      padding-top: calc(50% - 20px);
+      position: absolute;
+      color: white;
+      text-align: center;
+      font-size: 30px;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($app-color-1, .7);
+      opacity: 0;
+      @include transition(opacity .2s ease);
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'icomoon' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  .product-image {
+    position: relative;
+    display: block;
+    .img-fluid {
+      width: 100%;
+    }
+    &::before {
+      content: "\e90f";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      color: $app-color-1;
+      background-color: $white;
+      padding: 10px;
+      @include transition(color .2s ease);
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'icomoon' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+
+
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    &:hover {
+      &::before {
+        color: $gray-800;
+      }
+    }
+  }
+
+  .grayBox {
+    background-color: $gray-200;
+    padding: 20px 20px 5px;
+    margin-bottom: 1rem;
+    @include media-breakpoint-down(xs) {
+      margin-left: -15px;
+      margin-right: -15px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  .server-error {
+    text-align: center;
+    padding: 60px 0;
+    .server-error-head {
+      font-size: 160px;
+      @include media-breakpoint-down(xs) {
+        font-size: 120px;
+      }
+      font-weight: 600;
+      position: relative;
+      color: rgba($gray-300,.6);
+      letter-spacing: -.02em;
+      transform: translateX(1%);
+      &::after {
+        content: ".";
+        color: $app-color-1;
+        text-shadow: -4px -4px white, 0 -5px white, -5px 0 white, 5px -5px white, -5px 5px white;
+        @include media-breakpoint-down(xs) {
+          text-shadow: -2px -2px white, 0 -3px white, -3px 0 white, 3px -3px white, -3px 3px white;
+        }
+        display: inline-block;
+        transform: translateX(-70%);
+      }
+    }
+  }
+
+}

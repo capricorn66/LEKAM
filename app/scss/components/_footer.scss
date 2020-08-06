@@ -1,0 +1,114 @@
+/* footer
+*******************************************************************/
+
+footer {
+  position: relative;
+  padding: 50px 0 0;
+  font-size: 14px;
+  background-color: $app-color-1;
+  color: $white;
+  font-weight: 300;
+
+  a {
+    color: $white;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: rgba($white,.7);
+    }
+  }
+
+  .vr {
+    border-left: 1px solid rgba($white,.5);
+    @include media-breakpoint-down(md) {
+      border-left: 0;
+    }
+  }
+
+  hr {
+    border-top: 1px solid rgba($white,.5);
+  }
+
+  .brand {
+    img {
+      width: 100px;
+      max-width: 96%;
+      display: block;
+      @include media-breakpoint-up(sm) {
+        width: 120px;
+      }
+      @include media-breakpoint-up(lg) {
+        width: 150px;
+      }
+    }
+  }
+
+  h6 {
+    line-height: 1.3em;
+    min-height: 2.6em;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  .nav-link {
+    padding: 0;
+    margin-bottom: 10px;
+    @include transition(color .2s ease);
+    color: $white;
+    text-decoration: none;
+    font-weight: 300;
+    &:hover,
+    &:focus {
+      color: $app-color-1;
+    }
+  }
+
+  .footer-bottom {
+    padding: 10px 0;
+    @include media-breakpoint-down(md) {
+      padding: 20px 0;
+    }
+    background-color: $white;
+    color: $gray-600;
+    font-size: 14px;
+
+    .footer-bottom-nav {
+      .footer-bottom-link {
+        color: $gray-400;
+        margin-right: 32px;
+        @include media-breakpoint-down(md) {
+          display: block;
+          margin-bottom: 10px;
+        }
+        + .footer-bottom-link {
+          position: relative;
+          @include media-breakpoint-up(lg) {
+            margin-left: 32px;
+            &::before {
+              content: "";
+              position: absolute;
+              top: -2px;
+              bottom: -2px;
+              left: -32px;
+              border-left: 1px solid $gray-300;
+            }
+          }
+        }
+        &:focus,
+        &:hover {
+          color: $gray-800;
+        }
+      }
+      .icon-social-linkedIn {
+        color: #0274b3;
+        font-size: 32px;
+        @include media-breakpoint-down(lg) {
+          font-size: 24px;
+        }
+      }
+    }
+    a {
+
+    }
+  }
+}
