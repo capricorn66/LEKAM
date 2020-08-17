@@ -570,6 +570,40 @@
     </div>
 </div>
 
+<div class="modal fade" id="statementModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">OŚWIADCZENIE</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-check my-30">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Oświadczam, że jestem lekarzem, farmaceutą lub osobą prowadzącą obrót produktami leczniczymi.
+                    </label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Akceptuję</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', function(){
+
+        $('#statementModal').modal('show')
+
+    }, false);
+
+</script>
+
 
 <div class="bs4-xs d-block d-sm-none"></div>
 <div class="bs4-sm d-none d-sm-block d-md-none"></div>
