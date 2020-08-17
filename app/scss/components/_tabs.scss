@@ -4,13 +4,20 @@
 main {
   .nav-pills {
     margin-bottom: 30px;
-    padding: 50px 0;
+    padding: 0;
     border-bottom: 1px solid $gray-200;
     .nav-item {
       position: relative;
-      margin: 0 20px 10px;
+      margin: 0 20px;
+      @include media-breakpoint-down(md) {
+        margin: 0 10px;
+      }
       .nav-link {
-        padding: 2px 20px;
+        @include media-breakpoint-up(lg) {
+          min-width: 190px;
+        }
+        text-align: center;
+        padding: 2px 20px 1px;
         border: 1px solid $app-color-1;
         color: $app-color-1;
         &.active {
@@ -20,8 +27,11 @@ main {
       }
     }
   }
+
   .tab-content {
-    margin-bottom: 30px;
+    > .tab-pane {
+      padding: 0;
+    }
   }
 
   .filter-item {
@@ -29,6 +39,8 @@ main {
     color: rgba($body-color,.7);
     font-size: 18px;
     font-weight: 500;
+    display: block;
+    height: 24px;
     &:focus,
     &:hover,
     &.active {

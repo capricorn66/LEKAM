@@ -15,8 +15,8 @@
 		}
 
 		.nav-scroll-btn {
-			top: 1px;
-			bottom: 2px;
+			top: 0;
+			bottom: 0;
 			&.nav-scroll-btn-left {
 				background: linear-gradient(to right, rgba($white, 1) 0%, rgba($white, 1) 50%, rgba($white, 0) 100%);
 			}
@@ -84,13 +84,6 @@
 				button,
 				a {
 					text-decoration: none;
-
-					span:not(.btn) {
-						display: inline-block;
-						vertical-align: middle;
-						line-height: 1.2em;
-						text-align: left;
-					}
 				}
 			}
 
@@ -143,7 +136,7 @@
 			left: 0;
 			text-align: left;
 			&::after {
-				background: $icon-arrow-left-gray no-repeat 0 2px !important;
+				background: $icon-arrow-left-gray no-repeat 0 3px !important;
 			}
 		}
 
@@ -151,7 +144,7 @@
 			right: 0;
 			text-align: right;
 			&::after {
-				background: $icon-arrow-right-gray no-repeat 0 2px !important;
+				background: $icon-arrow-right-gray no-repeat 0 3px !important;
 			}
 		}
 	}

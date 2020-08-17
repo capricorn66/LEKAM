@@ -4,8 +4,7 @@
 .breadcrumb {
   background: none;
   font-size: 14px;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0.5rem 0;
   margin-bottom: 30px;
   .breadcrumb-item {
     &::before {

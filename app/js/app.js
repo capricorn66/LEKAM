@@ -128,7 +128,13 @@ $(document).ready(function(e) {
         innerHTML: ''
     });
 
-    $('.nav-scroll').navScroll();
+    $('.nav-container .nav-scroll').navScroll();
+
+    $('.tab-pane.active .nav-scroll').navScroll();
+
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        $('.tab-pane.active .nav-scroll').navScroll();
+    })
 
     $('[data-toggle="popover"]').popover({
         content: function () {

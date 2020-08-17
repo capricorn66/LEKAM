@@ -116,259 +116,273 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Strona główna</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Produkty</li>
+                    <li class="breadcrumb-item"><a href="#">Produkty</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Biosteron</li>
                 </ol>
             </nav>
         </div>
     </div>
     <div class="container">
 
-        <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <a class="nav-link active" id="pills-category-tab" data-toggle="pill" href="#pills-category" role="tab" aria-controls="pills-category" aria-selected="true">Wyszukaj wg kategorii</a>
-            </li>
-            <li class="nav-item" role="presentation">
-                <a class="nav-link" id="pills-names-tab" data-toggle="pill" href="#pills-names" role="tab" aria-controls="pills-names" aria-selected="false">Wyszukaj wg nazwy</a>
-            </li>
-            <li class="nav-item" role="presentation">
-                <a class="nav-link" id="pills-search-tab" data-toggle="pill" href="#pills-search" role="tab" aria-controls="pills-search" aria-selected="false">Wyszukaj alfabetycznie</a>
-            </li>
-            <li class="nav-item" role="presentation">
-                <a class="nav-link" id="pills-therapeutics-tab" data-toggle="pill" href="#pills-therapeutics" role="tab" aria-controls="pills-therapeutics" aria-selected="false">Obszary terapeutyczne</a>
-            </li>
-            <li class="nav-item" role="presentation">
-                <a class="nav-link" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="false">Wszystkie produkty</a>
-            </li>
-        </ul>
-        <div class="tab-content pt-20" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-category" role="tabpanel" aria-labelledby="pills-category-tab">
-
-                <div class="row justify-content-center">
-                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
-                        <a href="" class="products-category active">
-                            <span class="products-category-img">
-                                <img src="images/category-prescription.svg" alt="leki na receptę">
-                            </span>
-                            <span class="products-category-name">leki na receptę</span>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
-                        <a href="" class="products-category">
-                            <span class="products-category-img">
-                                <img src="images/category-no-prescription.svg" alt="leki bez recepty">
-                            </span>
-                            <span class="products-category-name">leki bez recepty</span>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
-                        <a href="" class="products-category">
-                            <span class="products-category-img">
-                                <img src="images/category-supplements.svg" alt="suplementy diety">
-                            </span>
-                            <span class="products-category-name">suplementy diety</span>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
-                        <a href="" class="products-category">
-                            <span class="products-category-img">
-                                <img src="images/category-cosmetics.svg" alt="kosmetyki">
-                            </span>
-                            <span class="products-category-name">kosmetyki</span>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
-                        <a href="" class="products-category">
-                            <span class="products-category-img">
-                                <img src="images/category-goods-medical.svg" alt="wyroby medyczne">
-                            </span>
-                            <span class="products-category-name">wyroby medyczne</span>
-                        </a>
-                    </div>
+        <div class="nav-container">
+            <div class="nav-scroll nav-tabs-scroll py-20 py-lg-40">
+                <div class="nav-scroll-container">
+                    <ul class="nav nav-pills justify-content-center border-bottom-0" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="pills-category-tab" data-toggle="tab" href="#pills-category" role="tab" aria-controls="pills-category" aria-selected="true">Wyszukaj wg kategorii</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-names-tab" data-toggle="tab" href="#pills-names" role="tab" aria-controls="pills-names" aria-selected="false">Wyszukaj wg nazwy</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-search-tab" data-toggle="tab" href="#pills-search" role="tab" aria-controls="pills-search" aria-selected="false">Wyszukaj alfabetycznie</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-therapeutics-tab" data-toggle="tab" href="#pills-therapeutics" role="tab" aria-controls="pills-therapeutics" aria-selected="false">Obszary terapeutyczne</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-all-tab" data-toggle="tab" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="false">Wszystkie produkty</a>
+                        </li>
+                    </ul>
                 </div>
+                <button class="nav-scroll-btn nav-scroll-btn-left" type="button"></button>
+                <button class="nav-scroll-btn nav-scroll-btn-right" type="button"></button>
+            </div>
+        </div>
+
+        <hr class="mb-30 mb-lg-50">
+
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade mb-80 show active" id="pills-category" role="tabpanel" aria-labelledby="pills-category-tab">
+
+                <div class="nav-scroll nav-tabs-scroll">
+                    <div class="nav-scroll-container">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item px-30 px-lg-50">
+                                <a href="" class="products-category active">
+                                    <span class="products-category-img">
+                                        <img src="images/category-prescription.svg" alt="leki na receptę">
+                                    </span>
+                                    <span class="products-category-name">leki na receptę</span>
+                                </a>
+                            </li>
+                            <li class="nav-item px-30 px-lg-50">
+                                <a href="" class="products-category">
+                                    <span class="products-category-img">
+                                        <img src="images/category-no-prescription.svg" alt="leki bez recepty">
+                                    </span>
+                                    <span class="products-category-name">leki bez recepty</span>
+                                </a>
+                            </li>
+                            <li class="nav-item px-30 px-lg-50">
+                                <a href="" class="products-category">
+                                    <span class="products-category-img">
+                                        <img src="images/category-supplements.svg" alt="suplementy diety">
+                                    </span>
+                                    <span class="products-category-name">suplementy diety</span>
+                                </a>
+                            </li>
+                            <li class="nav-item px-30 px-lg-50">
+                                <a href="" class="products-category">
+                                    <span class="products-category-img">
+                                        <img src="images/category-cosmetics.svg" alt="kosmetyki">
+                                    </span>
+                                    <span class="products-category-name">kosmetyki</span>
+                                </a>
+                            </li>
+                            <li class="nav-item px-30 px-lg-50">
+                                <a href="" class="products-category">
+                                    <span class="products-category-img">
+                                        <img src="images/category-goods-medical.svg" alt="wyroby medyczne">
+                                    </span>
+                                    <span class="products-category-name">wyroby medyczne</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <button class="nav-scroll-btn nav-scroll-btn-left" type="button"></button>
+                    <button class="nav-scroll-btn nav-scroll-btn-right" type="button"></button>
+                </div>
+                <hr class="mt-30 mt-lg-40">
 
             </div>
-            <div class="tab-pane fade" id="pills-names" role="tabpanel" aria-labelledby="pills-names-tab">
+            <div class="tab-pane fade mb-80" id="pills-names" role="tabpanel" aria-labelledby="pills-names-tab">
 
                 <form>
-                    <div class="form-group row justify-content-center mb-50">
+                    <div class="form-group row justify-content-center">
                         <label for="productSearch" class="col-lg-4 col-form-label app-color-1">Wyszukaj w całym katalogu produktów</label>
                         <div class="col-lg-6">
                             <div class="input-group">
                                 <input type="text" class="form-control" id="productSearch" placeholder="Wpisz nazwę szukanego produktu" aria-label="nazwa produktu" aria-describedby="inputPassword">
                                 <div class="input-group-append">
-                                    <button type="submit" class="btn btn-primary">OK</button>
+                                    <button type="submit" class="btn btn-primary mb-2">OK</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </form>
+                <hr class="mt-30 mt-lg-40">
 
             </div>
-            <div class="tab-pane fade" id="pills-search" role="tabpanel" aria-labelledby="pills-search-tab">
+            <div class="tab-pane fade mb-80" id="pills-search" role="tabpanel" aria-labelledby="pills-search-tab">
 
-                <div class="d-flex justify-content-center mb-50">
-                    <a href="" class="filter-item">A</a>
-                    <a href="" class="filter-item">B</a>
-                    <a href="" class="filter-item active">C</a>
-                    <a href="" class="filter-item">D</a>
-                    <a href="" class="filter-item">E</a>
-                    <a href="" class="filter-item">F</a>
-                    <a href="" class="filter-item">G</a>
-                    <a href="" class="filter-item">H</a>
-                    <a href="" class="filter-item">I</a>
-                    <a href="" class="filter-item">J</a>
-                    <a href="" class="filter-item">K</a>
-                    <a href="" class="filter-item">L</a>
+                <div class="nav-scroll nav-tabs-scroll">
+                    <div class="nav-scroll-container">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item px-1"><a href="" class="filter-item">A</a></li>
+                            <li class="nav-item px-1"><a href="" class="filter-item">B</a></li>
+                            <li class="nav-item px-1"><a href="" class="filter-item active">C</a></li>
+                            <li class="nav-item px-1"><a href="" class="filter-item">D</a></li>
+                            <li class="nav-item px-1"><a href="" class="filter-item">E</a></li>
+                            <li class="nav-item px-1"><a href="" class="filter-item">F</a></li>
+                            <li class="nav-item px-1"><a href="" class="filter-item">G</a></li>
+                            <li class="nav-item px-1"><a href="" class="filter-item">H</a></li>
+                            <li class="nav-item px-1"><a href="" class="filter-item">I</a></li>
+                            <li class="nav-item px-1"><a href="" class="filter-item">J</a></li>
+                            <li class="nav-item px-1"><a href="" class="filter-item">K</a></li>
+                            <li class="nav-item px-1"><a href="" class="filter-item">L</a></li>
+                            <li class="nav-item px-1"><a href="" class="filter-item">M</a></li>
+                            <li class="nav-item px-1"><a href="" class="filter-item">N</a></li>
+                            <li class="nav-item px-1"><a href="" class="filter-item">O</a></li>
+                            <li class="nav-item px-1"><a href="" class="filter-item">P</a></li>
+                            <li class="nav-item px-1"><a href="" class="filter-item">R</a></li>
+                            <li class="nav-item px-1"><a href="" class="filter-item">S</a></li>
+                            <li class="nav-item px-1"><a href="" class="filter-item">T</a></li>
+                            <li class="nav-item px-1"><a href="" class="filter-item">U</a></li>
+                            <li class="nav-item px-1"><a href="" class="filter-item">W</a></li>
+                            <li class="nav-item px-1"><a href="" class="filter-item">Z</a></li>
+                        </ul>
+                    </div>
+                    <button class="nav-scroll-btn nav-scroll-btn-left" type="button"></button>
+                    <button class="nav-scroll-btn nav-scroll-btn-right" type="button"></button>
+                </div>
+                <hr class="mt-30 mt-lg-50">
+
+            </div>
+            <div class="tab-pane fade mb-80" id="pills-therapeutics" role="tabpanel" aria-labelledby="pills-therapeutics-tab">
+
+                <div class="nav-scroll nav-tabs-scroll">
+                    <div class="nav-scroll-container">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item px-30 px-lg-50">
+                                <a href="" class="products-category active">
+                                    <span class="products-category-img">
+                                        <img src="images/products-psychiatry.svg" alt="psychiatria">
+                                    </span>
+                                    <span class="products-category-name">psychiatria</span>
+                                </a>
+                            </li>
+                            <li class="nav-item px-30 px-lg-50">
+                                <a href="" class="products-category">
+                                    <span class="products-category-img">
+                                        <img src="images/products-pulmonology.svg" alt="pulmonologia">
+                                    </span>
+                                    <span class="products-category-name">pulmonologia</span>
+                                </a>
+                            </li>
+                            <li class="nav-item px-30 px-lg-50">
+                                <a href="" class="products-category">
+                                    <span class="products-category-img">
+                                        <img src="images/products-cardiology.svg" alt="Kardiologia">
+                                    </span>
+                                    <span class="products-category-name">Kardiologia</span>
+                                </a>
+                            </li>
+                            <li class="nav-item px-30 px-lg-50">
+                                <a href="" class="products-category">
+                                    <span class="products-category-img">
+                                        <img src="images/products-ophthalmology.svg" alt="okulistyka">
+                                    </span>
+                                    <span class="products-category-name">okulistyka</span>
+                                </a>
+                            </li>
+                            <li class="nav-item px-30 px-lg-50">
+                                <a href="" class="products-category">
+                                    <span class="products-category-img">
+                                        <img src="images/products-gastroenterology.svg" alt="gastroenterologia">
+                                    </span>
+                                    <span class="products-category-name">gastroenterologia</span>
+                                </a>
+                            </li>
+                            <li class="nav-item px-30 px-lg-50">
+                                <a href="" class="products-category">
+                                    <span class="products-category-img">
+                                        <img src="images/products-dermatology.svg" alt="dermatologia">
+                                    </span>
+                                    <span class="products-category-name">dermatologia</span>
+                                </a>
+                            </li>
+                            <li class="nav-item px-30 px-lg-50">
+                                <a href="" class="products-category">
+                                    <span class="products-category-img">
+                                        <img src="images/products-allergology.svg" alt="alergologia">
+                                    </span>
+                                    <span class="products-category-name">alergologia</span>
+                                </a>
+                            </li>
+                            <li class="nav-item px-30 px-lg-50">
+                                <a href="" class="products-category">
+                                    <span class="products-category-img">
+                                        <img src="images/products-endocrinology.svg" alt="endokrynologia">
+                                    </span>
+                                    <span class="products-category-name">endokrynologia</span>
+                                </a>
+                            </li>
+                            <li class="nav-item px-30 px-lg-50">
+                                <a href="" class="products-category">
+                                    <span class="products-category-img">
+                                        <img src="images/products-gynecology.svg" alt="ginekologia">
+                                    </span>
+                                    <span class="products-category-name">ginekologia</span>
+                                </a>
+                            </li>
+                            <li class="nav-item px-30 px-lg-50">
+                                <a href="" class="products-category">
+                                    <span class="products-category-img">
+                                        <img src="images/products-orthopedics.svg" alt="ortopedia">
+                                    </span>
+                                    <span class="products-category-name">ortopedia</span>
+                                </a>
+                            </li>
+                            <li class="nav-item px-30 px-lg-50">
+                                <a href="" class="products-category">
+                                    <span class="products-category-img">
+                                        <img src="images/products-urology.svg" alt="urologia">
+                                    </span>
+                                    <span class="products-category-name">urologia</span>
+                                </a>
+                            </li>
+                            <li class="nav-item px-30 px-lg-50">
+                                <a href="" class="products-category">
+                                    <span class="products-category-img">
+                                        <img src="images/products-pediatrics.svg" alt="pediatria">
+                                    </span>
+                                    <span class="products-category-name">pediatria</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="nav-scroll-btn nav-scroll-btn-left" type="button"></button>
+                    <button class="nav-scroll-btn nav-scroll-btn-right" type="button"></button>
                 </div>
 
-            </div>
-            <div class="tab-pane fade" id="pills-therapeutics" role="tabpanel" aria-labelledby="pills-therapeutics-tab">
-
-                <div class="row justify-content-center">
-                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
-                        <a href="" class="products-category active">
-                            <span class="products-category-img">
-                                <img src="images/products-psychiatry.svg" alt="psychiatria">
-                            </span>
-                            <span class="products-category-name">psychiatria</span>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
-                        <a href="" class="products-category">
-                            <span class="products-category-img">
-                                <img src="images/products-pulmonology.svg" alt="pulmonologia">
-                            </span>
-                            <span class="products-category-name">pulmonologia</span>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
-                        <a href="" class="products-category">
-                            <span class="products-category-img">
-                                <img src="images/products-cardiology.svg" alt="Kardiologia">
-                            </span>
-                            <span class="products-category-name">Kardiologia</span>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
-                        <a href="" class="products-category">
-                            <span class="products-category-img">
-                                <img src="images/products-ophthalmology.svg" alt="okulistyka">
-                            </span>
-                            <span class="products-category-name">okulistyka</span>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
-                        <a href="" class="products-category">
-                            <span class="products-category-img">
-                                <img src="images/products-gastroenterology.svg" alt="gastroenterologia">
-                            </span>
-                            <span class="products-category-name">gastroenterologia</span>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
-                        <a href="" class="products-category">
-                            <span class="products-category-img">
-                                <img src="images/products-dermatology.svg" alt="dermatologia">
-                            </span>
-                            <span class="products-category-name">dermatologia</span>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
-                        <a href="" class="products-category">
-                            <span class="products-category-img">
-                                <img src="images/products-allergology.svg" alt="alergologia">
-                            </span>
-                            <span class="products-category-name">alergologia</span>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
-                        <a href="" class="products-category">
-                            <span class="products-category-img">
-                                <img src="images/products-endocrinology.svg" alt="endokrynologia">
-                            </span>
-                            <span class="products-category-name">endokrynologia</span>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
-                        <a href="" class="products-category">
-                            <span class="products-category-img">
-                                <img src="images/products-gynecology.svg" alt="ginekologia">
-                            </span>
-                            <span class="products-category-name">ginekologia</span>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
-                        <a href="" class="products-category">
-                            <span class="products-category-img">
-                                <img src="images/products-orthopedics.svg" alt="ortopedia">
-                            </span>
-                            <span class="products-category-name">ortopedia</span>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
-                        <a href="" class="products-category">
-                            <span class="products-category-img">
-                                <img src="images/products-urology.svg" alt="urologia">
-                            </span>
-                            <span class="products-category-name">urologia</span>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
-                        <a href="" class="products-category">
-                            <span class="products-category-img">
-                                <img src="images/products-pediatrics.svg" alt="pediatria">
-                            </span>
-                            <span class="products-category-name">pediatria</span>
-                        </a>
-                    </div>
-                </div>
+                <hr class="mt-30 mt-lg-40">
 
             </div>
-            <div class="tab-pane fade" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">...</div>
+            <div class="tab-pane fade" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab"></div>
         </div>
 
-        <hr class="mb-80">
+        <div class="mb-40">
+            <h1 class="app-color-1">Biosteron</h1>
+            <div class="mt-n20 mb-40">
+                <strong class="app-color-1">10 mg, 25 mg</strong>
+            </div>
+        </div>
 
         <div class="row">
-            <div class="col-lg-7 mb-40">
-                <div class="mb-40">
-                    <h1 class="app-color-1">Biosteron</h1>
-                    <div class="mt-n20 mb-40">
-                        <strong class="app-color-1">10 mg, 25 mg</strong>
-                    </div>
 
-                    <h2>Co to jest Biosteron?</h2>
-                    <p>Substancją czynną leku Biosteron jest dehydroepiandrosteron (DHEA), który jest hormonem steroidowym
-                        wytwarzanym w nadnerczach i uwalnianym do krwi.
-                        W różnych tkankach DHEA ulega przemianie do aktywnych hormonów płciowych: estrogenów i androgenów.
-                        Największe stężenia DHEA w surowicy występują w okresie młodości (2 i 3 dekada życia), po czym
-                        następuje powolny spadek, do ok. 10-20% u osób w wieku 80 lat.</p>
-
-                    <h2>Wskazania:</h2>
-                    <p>Niedobór dehydroepiandrosteronu (DHEA).</p>
-
-                    <h2>Przeciwskazania:</h2>
-                    <p>Uczulenie (nadwrażliwość) na substancję czynną lub na którykolwiek z pozostałych składników leku
-                        Biosteron, rak piersi, jajnika lub inny nowotwór zależny od estrogenów, łagodny rozrost i rak
-                        gruczołu krokowego, rak sutka u mężczyzn, ciężka niewydolność wątroby, ciężka niewydolność nerek,
-                        okres ciąży i karmienia piersią.</p>
-
-                    <h2>Podmiot odpowiedzialny:</h2>
-                    <p>Przedsiębiorstwo Farmaceutyczne LEK-AM Sp. z o.o.<br>
-                        ul. Ostrzykowizna 14A<br>
-                        05-170 Zakroczym</p>
-
-                    <strong>„Przed użyciem zapoznaj się z treścią ulotki dołączonej do opakowania bądź skonsultuj się z lekarzem
-                        lub farmaceutą, gdyż każdy lek niewłaściwie stosowany zagraża Twojemu życiu lub zdrowiu.”</strong>
-                </div>
-                <div class="d-flex flex-column flex-sm-row justify-content-between">
-                    <a href="" class="btn px-0 order-sm-1 mb-20 mb-sm-0"><i class="icon-expand mr-10"></i> Zobacz stronę produktu</a>
-                    <a href="" class="btn btn-outline-primary">wróć do listy produktów</a>
-                </div>
-
-
-            </div>
-            <div class="col-lg-5 mb-40">
+            <div class="col-lg-5 mb-40 order-lg-1">
                 <div>
                     <div class="product-box product-box-details pb-20">
                         <div class="product-box-img text-center mb-40">
@@ -407,8 +421,42 @@
                     </div>
                 </div>
             </div>
+            <div class="col-lg-7 mb-40">
+
+                <h2>Co to jest Biosteron?</h2>
+                <p>Substancją czynną leku Biosteron jest dehydroepiandrosteron (DHEA), który jest hormonem steroidowym
+                    wytwarzanym w nadnerczach i uwalnianym do krwi.
+                    W różnych tkankach DHEA ulega przemianie do aktywnych hormonów płciowych: estrogenów i androgenów.
+                    Największe stężenia DHEA w surowicy występują w okresie młodości (2 i 3 dekada życia), po czym
+                    następuje powolny spadek, do ok. 10-20% u osób w wieku 80 lat.</p>
+
+                <h2>Wskazania:</h2>
+                <p>Niedobór dehydroepiandrosteronu (DHEA).</p>
+
+                <h2>Przeciwskazania:</h2>
+                <p>Uczulenie (nadwrażliwość) na substancję czynną lub na którykolwiek z pozostałych składników leku
+                    Biosteron, rak piersi, jajnika lub inny nowotwór zależny od estrogenów, łagodny rozrost i rak
+                    gruczołu krokowego, rak sutka u mężczyzn, ciężka niewydolność wątroby, ciężka niewydolność nerek,
+                    okres ciąży i karmienia piersią.</p>
+
+                <h2>Podmiot odpowiedzialny:</h2>
+                <p>Przedsiębiorstwo Farmaceutyczne LEK-AM Sp. z o.o.<br>
+                    ul. Ostrzykowizna 14A<br>
+                    05-170 Zakroczym</p>
+
+                <strong>„Przed użyciem zapoznaj się z treścią ulotki dołączonej do opakowania bądź skonsultuj się z lekarzem
+                    lub farmaceutą, gdyż każdy lek niewłaściwie stosowany zagraża Twojemu życiu lub zdrowiu.”</strong>
+
+            </div>
 
         </div>
+
+        <hr>
+        <div class="d-flex flex-column flex-sm-row justify-content-between">
+            <a href="" class="btn px-0 order-sm-1 mb-20 mb-sm-0"><i class="icon-expand mr-10"></i> Zobacz stronę produktu</a>
+            <a href="" class="btn btn-outline-primary">wróć do listy produktów</a>
+        </div>
+
     </div>
 </main>
 
