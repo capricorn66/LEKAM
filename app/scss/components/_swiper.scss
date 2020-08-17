@@ -3,10 +3,13 @@
 
 .swiper-button-next,
 .swiper-button-prev {
+  cursor: pointer;
   opacity: .6;
+  padding: 1px 2px;
   &:focus,
   &:hover {
     opacity: 1;
+    outline: 0;
   }
   &.swiper-button-disabled {
     opacity: .2;

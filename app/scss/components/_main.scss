@@ -121,7 +121,7 @@ main {
     display: block;
     &::before {
       content: "\e90f";
-      padding-top: calc(50% - 20px);
+      padding-top: calc(50% - 40px);
       position: absolute;
       color: white;
       text-align: center;

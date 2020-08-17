@@ -42,7 +42,7 @@
 
             <div class="d-flex flex-column flex-xl-row align-self-lg-end ml-lg-auto w-100">
 
-                <div class="d-flex align-items-center order-xl-last mt-auto ml-auto mb-md-40 mb-lg-0 mb-30 mb-md-0">
+                <div class="d-flex align-items-center order-xl-last mt-auto ml-auto mb-md-40 mb-lg-0 mb-10 mb-md-0">
                     <a href="" role="button" class="search-link" data-toggle="modal" data-target="#searchModal">
                         <i class="icon-search mt-lg-n1"></i>
                     </a>
@@ -110,18 +110,17 @@
     </div>
 </header>
 
-<div class="bg-gray-200">
-    <div class="container">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Strona główna</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Produkty</li>
-            </ol>
-        </nav>
-    </div>
-</div>
-
 <main>
+    <div class="bg-gray-200">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Strona główna</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Produkty</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
     <div class="container">
 
         <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
@@ -141,7 +140,7 @@
                 <a class="nav-link" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="false">Wszystkie produkty</a>
             </li>
         </ul>
-        <div class="tab-content" id="pills-tabContent">
+        <div class="tab-content pt-20" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-category" role="tabpanel" aria-labelledby="pills-category-tab">
 
                 <div class="row justify-content-center">
@@ -191,13 +190,13 @@
             <div class="tab-pane fade" id="pills-names" role="tabpanel" aria-labelledby="pills-names-tab">
 
                 <form>
-                    <div class="form-group row justify-content-center">
+                    <div class="form-group row justify-content-center mb-50">
                         <label for="productSearch" class="col-lg-4 col-form-label app-color-1">Wyszukaj w całym katalogu produktów</label>
                         <div class="col-lg-6">
                             <div class="input-group">
                                 <input type="text" class="form-control" id="productSearch" placeholder="Wpisz nazwę szukanego produktu" aria-label="nazwa produktu" aria-describedby="inputPassword">
                                 <div class="input-group-append">
-                                    <button type="submit" class="btn btn-primary mb-2">OK</button>
+                                    <button type="submit" class="btn btn-primary">OK</button>
                                 </div>
                             </div>
                         </div>
@@ -207,7 +206,7 @@
             </div>
             <div class="tab-pane fade" id="pills-search" role="tabpanel" aria-labelledby="pills-search-tab">
 
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center mb-50">
                     <a href="" class="filter-item">A</a>
                     <a href="" class="filter-item">B</a>
                     <a href="" class="filter-item active">C</a>
@@ -362,11 +361,16 @@
                     <strong>„Przed użyciem zapoznaj się z treścią ulotki dołączonej do opakowania bądź skonsultuj się z lekarzem
                         lub farmaceutą, gdyż każdy lek niewłaściwie stosowany zagraża Twojemu życiu lub zdrowiu.”</strong>
                 </div>
-                <a href="" class="btn btn-outline-primary">wróć do listy produktów</a>
+                <div class="d-flex flex-column flex-sm-row justify-content-between">
+                    <a href="" class="btn px-0 order-sm-1 mb-20 mb-sm-0"><i class="icon-expand mr-10"></i> Zobacz stronę produktu</a>
+                    <a href="" class="btn btn-outline-primary">wróć do listy produktów</a>
+                </div>
+
+
             </div>
             <div class="col-lg-5 mb-40">
                 <div>
-                    <div class="product-box pb-20">
+                    <div class="product-box product-box-details pb-20">
                         <div class="product-box-img text-center mb-40">
                             <a href="images/product.png" data-lightbox="product">
                                 <img src="images/product.png" alt="Biosteron">
@@ -472,7 +476,7 @@
                 <a href="" class="footer-bottom-link">Copyright © Lek-am</a>
                 <a href="" class="footer-bottom-link">Polityka Prywatności</a>
                 <a href="" class="footer-bottom-link">Created by Enigmatis</a>
-                <a href="" class="footer-bottom-link">ZGŁOŚ DZIAŁANIE NIEPORZĄDANE</a>
+                <a href="" class="footer-bottom-link">ZGŁOŚ DZIAŁANIE NIEPOŻĄDANE</a>
                 <a href="" class="footer-bottom-link"><i class="icon-social-linkedIn"></i></a>
             </div>
         </div>
@@ -498,7 +502,7 @@
 
 <!-- Modal -->
 <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content modal-search">
 
             <div class="input-group input-group-lg">

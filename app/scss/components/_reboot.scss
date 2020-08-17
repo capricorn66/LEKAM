@@ -8,16 +8,16 @@ body {
   font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
   color: $body-color;
   @include media-breakpoint-only(xs) {
-    padding-top: 87px;
+    padding-top: 114px;
   }
   @include media-breakpoint-only(sm) {
-    padding-top: 118px;
+    padding-top: 108px;
   }
   @include media-breakpoint-only(md) {
-    padding-top: 165px;
+    padding-top: 163px;
   }
   @include media-breakpoint-up(lg) {
-    padding-top: 132px;
+    padding-top: 130px;
   }
 }
 

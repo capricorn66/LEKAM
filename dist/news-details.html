@@ -110,30 +110,89 @@
     </div>
 </header>
 
-<main>
-    <div class="bg-gray-200">
-        <div class="container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Strona główna</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">błąd serwera</li>
-                </ol>
-            </nav>
-        </div>
-    </div>
-    <div class="container mb-60">
+    <main>
 
-        <div class="server-error">
-            <div class="server-error-head">404</div>
-            <div class="server-error-body">
-                <p class="mb-40"><strong>UPS!</strong> Wiemy, że nie chciałeś się tu znaleźć.<br> Mamy nadzieję, że ostatni raz oglądasz nas od tej strony :) </p>
-                <a href="" class="btn btn-primary btn-lg px-30">Przejdź do strony głównej</a>
+        <div class="bg-gray-200">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Strona główna</a></li>
+                        <li class="breadcrumb-item"><a href="#">Aktualności</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Darowizny dla Uniwersyteckiego Szpitala Klinicznego w Białymstoku</li>
+                    </ol>
+                </nav>
             </div>
         </div>
 
-    </div>
-</main>
+        <div class="container mb-60">
 
+            <h2>Darowizny dla Uniwersyteckiego Szpitala Klinicznego w Białymstoku </h2>
+            <div class="date mt-0 mb-30">2019-11-26</div>
+            <p>W piątek 24 lipca br. mieliśmy okazję przekazać dwie darowizny do Uniwersyteckiego Szpitala Klinicznego w Białymstoku: jedna do I Kliniki Chorób Płuc i Gruźlicy z Pododdziałem Chemioterapii, a druga do Kliniki Alergologii i Chorób Wewnętrznych. </p>
+            <p>Dzięki świetnym kontaktom naszych przedstawicieli medycznych Izabeli Radkiewicz i Krzysztofa Węglickiego wszystko odbyło się bez zbędnej zwłoki czasowej, w miłej i przyjaznej atmosferze, choć z zachowaniem wszelkich rygorów w dobie panującej epidemii COVID-19. </p>
+
+            <hr class="my-30">
+
+            <h4 class="font-16">Pobierz</h4>
+            <a href="" class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-end">
+                <span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span></span>
+                <i class="icon-download font-20"></i>
+            </a>
+            <hr class="my-30">
+            <h4 class="font-16">Galeria</h4>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-20">
+                    <a href="images/news_2.jpg" data-lightbox="gallery" data-title="Opis obrazka 1" class="gallery-image">
+                        <picture>
+                            <source srcset="images/news_2.webp" type="image/webp">
+                            <source srcset="images/news_2.jpg" type="image/jpeg">
+                            <img src="images/product-1.jpg" alt="" class="img-fluid">
+                        </picture>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-20">
+                    <a href="images/news_2.jpg" data-lightbox="gallery" data-title="Opis obrazka 1" class="gallery-image">
+                        <picture>
+                            <source srcset="images/news_2.webp" type="image/webp">
+                            <source srcset="images/news_2.jpg" type="image/jpeg">
+                            <img src="images/product-1.jpg" alt="" class="img-fluid">
+                        </picture>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-20">
+                    <a href="images/news_2.jpg" data-lightbox="gallery" data-title="Opis obrazka 1" class="gallery-image">
+                        <picture>
+                            <source srcset="images/news_2.webp" type="image/webp">
+                            <source srcset="images/news_2.jpg" type="image/jpeg">
+                            <img src="images/product-1.jpg" alt="" class="img-fluid">
+                        </picture>
+                    </a>
+                </div>
+
+            </div>
+
+            <hr class="my-30">
+            <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center my-10">
+                <a href="" class="btn btn-outline-primary btn-bounce-h px-20"><i class="icon-arrow-left mr-20"></i> Wstecz</a>
+                <a href="">Zobacz wszystkie aktualności</a>
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function(){
+            lightbox.option({
+                'albumLabel': 'obrazek %1 z %2'
+            });
+        }, false);
+
+    </script>
 
 <footer>
     <div class="container">

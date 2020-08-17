@@ -8,7 +8,7 @@
   .products-category-img {
     display: block;
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top: 10px;
     &::after {
       content: "";
@@ -35,6 +35,17 @@
   .products-category-name {
     display: block;
     color: $body-color;
+    font-weight: 500;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 130%;
+      left: 50%;
+      right: 50%;
+      border: 1px solid transparent;
+      transition: all ease-out .3s;
+    }
   }
 
   &.active,
@@ -52,13 +63,59 @@
     }
     .products-category-name {
       color: $app-color-1;
+      &::after {
+        left: 10%;
+        right: 10%;
+        border: 1px solid $app-color-1;
+      }
     }
   }
 }
 
 .product-box {
   background-color: $white;
-  padding: 40px 40px 60px;
+  position: relative;
+  &.product-box-new::after {
+    content: attr(data-new);
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 13px;
+    font-weight: 500;
+    background-color: $alert-red;
+    color: $white;
+    padding: 4px 10px 3px;
+    line-height: 1em;
+  }
+  @include media-breakpoint-up(lg) {
+    padding: 40px 40px 60px;
+    &.product-box-details {
+      box-shadow: 0 0 12px 0 rgba($gray-300,.4), 0 6px 10px 0 rgba($gray-300,.4);
+    }
+    &[href]:hover,
+    &[href]:focus {
+      color: $gray-900;
+      box-shadow: 0 0 12px 0 rgba($gray-300,.8), 0 8px 10px 0 rgba($gray-300,.8);
+    }
+  }
+  @include media-breakpoint-down(md) {
+    padding: 40px 20px;
+  }
+  @include media-breakpoint-down(xs) {
+    padding: 40px 0;
+  }
+
+  &[href]:hover,
+  &[href]:focus {
+    text-decoration: none;
+    .product-box-title {
+      + small {
+        opacity: 1;
+      }
+    }
+  }
+
   display: block;
   height: 100%;
   display: -ms-flexbox;
@@ -66,17 +123,8 @@
   -ms-flex-direction: column;
   flex-direction: column;
   color: $body-color;
-  box-shadow: 0 5px 10px 0 rgba($gray-300,.4);
-  border: 1px solid rgba($gray-300,.4);
   border-radius: 8px;
   @include transition(box-shadow .2s ease);
-
-  &:hover,
-  &:focus {
-    color: $gray-900;
-    text-decoration: none;
-    box-shadow: 0 6px 14px 4px $gray-300;
-  }
 
   .product-box-img {
     a {
@@ -121,16 +169,19 @@
     font-weight: 600;
     margin-bottom: 24px;
     line-height: 1.4em;
-  }
-
-  small {
-    font-size: 16px;
-    color: $gray-400;
+    + small {
+      @include media-breakpoint-up(lg) {
+        opacity: 0;
+        font-size: 16px;
+        color: $gray-400;
+      }
+    }
   }
 
   .product-box-body {
 
   }
+
   .product-box-footer {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;

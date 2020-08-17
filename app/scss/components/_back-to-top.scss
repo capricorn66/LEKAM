@@ -2,12 +2,13 @@
 *******************************************************************/
 
 #back-to-top {
-  border: 1px solid $app-color-1;
+  background-color: $app-color-1;
+  border: 2px solid $white;
   box-shadow: none;
   text-align: center;
   line-height: 50px;
   &::after {
-    content: "\e903";
+    content: "\e925";
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     speak: none;
@@ -24,7 +25,7 @@
     display: inline-block;
     vertical-align: middle;
 
-    color: $app-color-1;
-    font-size: 28px;
+    color: $white;
+    font-size: 34px;
   }
 }

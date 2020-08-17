@@ -59,7 +59,7 @@ footer {
     font-weight: 300;
     &:hover,
     &:focus {
-      color: $app-color-1;
+      text-decoration: underline;
     }
   }
 
@@ -71,7 +71,9 @@ footer {
     background-color: $white;
     color: $gray-600;
     font-size: 14px;
-
+    @include media-breakpoint-up(lg) {
+      text-align: center;
+    }
     .footer-bottom-nav {
       .footer-bottom-link {
         color: $gray-400;

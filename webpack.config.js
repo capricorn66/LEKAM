@@ -17,6 +17,9 @@ const htmlIndex = generateHtml('index');
 const htmlProduct = generateHtml('product');
 const htmlProductList = generateHtml('productList');
 const htmlServer = generateHtml('server');
+const htmlNews = generateHtml('news');
+const htmlNewsDetails = generateHtml('news-details');
+const htmlContact = generateHtml('contact');
 
 
 module.exports = (env, options) => {
@@ -49,7 +52,10 @@ module.exports = (env, options) => {
             .concat(htmlIndex)
             .concat(htmlProduct)
             .concat(htmlProductList)
-            .concat(htmlServer),
+            .concat(htmlServer)
+            .concat(htmlNews)
+            .concat(htmlNewsDetails)
+            .concat(htmlContact),
 
         optimization: {
             minimizer: [

@@ -7,13 +7,47 @@
   -ms-flex-align: center;
   align-items: center;
   border-radius: 4px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 24px;
+  padding-right: 24px;
+  min-width: 128px;
+  justify-content: center;
 }
 
 .btn-link {
   color: $app-color-1;
 }
+
+.btn-white {
+  background-color: $white;
+  border-color: $white;
+  font-size: 16px;
+  color: $app-color-1;
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    color: $white;
+    box-shadow: none !important;
+  }
+}
+
+.btn-outline-white {
+  background-color: transparent;
+  color: $white;
+  border-color: $white;
+  font-size: 16px;
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $app-color-1;
+    box-shadow: none !important;
+  }
+}
+
 
 .btn-primary {
   background-color: $app-color-1;
@@ -25,8 +59,8 @@
   &:not(:disabled):not(.disabled).active,
   &:hover,
   &:focus {
-    background-color: darken($app-color-1, 6%);
-    border-color: darken($app-color-1, 6%);
+    background-color: lighten($app-color-1, 12%);
+    border-color: lighten($app-color-1, 12%);
     box-shadow: none !important;
   }
 }
@@ -41,8 +75,8 @@
   &:not(:disabled):not(.disabled).active,
   &:hover,
   &:focus {
-    background-color: darken($app-color-3, 6%);
-    border-color: darken($app-color-3, 6%);
+    background-color: darken($app-color-3, 9%);
+    border-color: darken($app-color-3, 9%);
     box-shadow: none !important;
   }
 }
@@ -54,8 +88,8 @@
   &:not(:disabled):not(.disabled).active,
   &:hover,
   &:focus {
-    background-color: darken($app-color-1, 6%);
-    border-color: darken($app-color-1, 6%);
+    background-color: lighten($app-color-1, 12%);
+    border-color: lighten($app-color-1, 12%);
     box-shadow: none !important;
   }
 }
@@ -67,11 +101,12 @@
   &:not(:disabled):not(.disabled).active,
   &:hover,
   &:focus {
-    background-color: darken($app-color-3, 6%);
-    border-color: darken($app-color-3, 6%);
+    background-color: darken($app-color-3, 9%);
+    border-color: darken($app-color-3, 9%);
     box-shadow: none !important;
   }
 }
+
 
 .btn-lg {
   padding: 1rem 3.5rem;

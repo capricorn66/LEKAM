@@ -3,7 +3,6 @@
 
 .news-wall {
 
-
 }
 
 .products-wall {
@@ -90,18 +89,29 @@
     }
   }
   .box-img {
-    position: absolute;
-    top: -10px;
-    bottom: -10px;
-    &.box-img-right {
-      border-radius: 8px 0 0 8px;
-      left: 0;
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+      width: calc(50vw - 30px);
+      &.box-img-right {
+        border-radius: 8px 0 0 8px;
+        left: 0;
+      }
+      &.box-img-left {
+        border-radius: 0 8px 8px 0;
+        right: 0;
+      }
     }
-    &.box-img-left {
-      border-radius: 0 8px 8px 0;
-      right: 0;
+    @include media-breakpoint-down(md) {
+      position: relative;
+      padding-bottom: 60%;
+      width: 100%;
+      &.box-img-right,
+      &.box-img-left {
+        border-radius: 8px;
+      }
     }
-    width: calc(50vw - 15px);
+    top: 0;
+    bottom: 0;
     background-size: cover;
     background-position: top center;
   }

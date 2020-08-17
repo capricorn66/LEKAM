@@ -2,13 +2,24 @@
 *******************************************************************/
 
 .modal-search {
-  margin-right: 40px;
+  margin-top: 25vh;
+  border: 0;
+  width: calc(100% - 50px);
+  box-shadow: 0 1px 5px -3px rgba($black,.3);
   .close {
     position: absolute;
     left: 100%;
     font-size: 18px;
     margin: 15px;
     top: 0;
+  }
+  .input-group {
+    margin-right: 50px;
+    .input-group-append {
+      .btn {
+        min-width: auto;
+      }
+    }
   }
 }
 

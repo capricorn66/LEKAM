@@ -42,7 +42,7 @@
 
                 <div class="d-flex flex-column flex-xl-row align-self-lg-end ml-lg-auto w-100">
 
-                    <div class="d-flex align-items-center order-xl-last mt-auto ml-auto mb-md-40 mb-lg-0 mb-30 mb-md-0">
+                    <div class="d-flex align-items-center order-xl-last mt-auto ml-auto mb-md-40 mb-lg-0 mb-10 mb-md-0">
                         <a href="" role="button" class="search-link" data-toggle="modal" data-target="#searchModal">
                             <i class="icon-search mt-lg-n1"></i>
                         </a>
@@ -113,11 +113,6 @@
     <section class="jumbotron swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide" style="background-image: url('./images/jumbotron-1.jpg') ">
-                <div class="video-bg">
-                    <video width="100%" height="100%" preload="auto" autoplay loop muted>
-                        <source src="./media/video.mp4" type="video/mp4">
-                    </video>
-                </div>
                 <div class="container">
                     <div class="row w-100 no-gutters">
                         <div class="col-11 col-sm-10 col-md-8 col-lg-6">
@@ -130,7 +125,12 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide" style="background-image: url('./images/jumbotron-2.jpg') ">
+            <div class="swiper-slide">
+                <div class="video-bg">
+                    <video width="100%" height="100%" preload="auto" autoplay loop muted>
+                        <source src="./media/video.mp4" type="video/mp4">
+                    </video>
+                </div>
                 <div class="container">
                     <div class="row w-100 no-gutters">
                         <div class="col-11 col-sm-10 col-md-8 col-lg-6">
@@ -163,6 +163,11 @@
     <section class="about-wall d-flex align-items-center">
         <div class="container">
             <div class="row gutter-lg">
+                <div class="col-lg-6 d-flex order-lg-last">
+                    <div class="position-relative w-100">
+                        <div class="box-img box-img-right" style="background-image: url('images/aboutus.jpg')"></div>
+                    </div>
+                </div>
                 <div class="col-lg-6">
                     <a href="" class="news-box">
                         <h2 class="news-box-title">O nas</h2>
@@ -180,11 +185,6 @@
                             <span class="btn btn-outline-primary">Więcej</span>
                         </div>
                     </a>
-                </div>
-                <div class="col-lg-6 d-flex">
-                    <div class="position-relative w-100">
-                        <div class="box-img box-img-right" style="background-image: url('images/aboutus.jpg')"></div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -269,8 +269,8 @@
             <div class="row">
                 <div class="col-sm-6 col-lg-4 d-flex mb-30">
                     <div class="box w-100" id="box-novelty">
-                        <div class="d-flex justify-content-between">
-                            <h2 class="box-title app-color-3">
+                        <div class="d-flex justify-content-between mb-30">
+                            <h2 class="box-title app-color-3 mb-0">
                                 Nowości
                             </h2>
                             <div class="d-flex justify-content-end">
@@ -324,12 +324,16 @@
                             </div>
                         </div>
 
+                        <div class="box-bottom app-bg-color-3 d-flex flex-wrap justify-content-between align-items-center">
+                            <h5 class="white my-10 mr-20">Nowości</h5>
+                            <a href="" class="btn btn-outline-white">Zobacz wszystkie</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4 d-flex mb-30">
                     <div class="box w-100" id="box-news">
-                        <div class="d-flex justify-content-between">
-                            <h2 class="box-title app-color-1">
+                        <div class="d-flex justify-content-between mb-30">
+                            <h2 class="box-title app-color-1 mb-0">
                                 Aktualności
                             </h2>
                             <div class="d-flex justify-content-end">
@@ -377,6 +381,10 @@
                             </div>
                         </div>
 
+                        <div class="box-bottom app-bg-color-1 d-flex flex-wrap justify-content-between align-items-center">
+                            <h5 class="white my-10 mr-20">Aktualności</h5>
+                            <a href="" class="btn btn-outline-white">Zobacz wszystkie</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 d-flex mb-30">
@@ -622,7 +630,7 @@
                     <a href="" class="footer-bottom-link">Copyright © Lek-am</a>
                     <a href="" class="footer-bottom-link">Polityka Prywatności</a>
                     <a href="" class="footer-bottom-link">Created by Enigmatis</a>
-                    <a href="" class="footer-bottom-link">ZGŁOŚ DZIAŁANIE NIEPORZĄDANE</a>
+                    <a href="" class="footer-bottom-link">ZGŁOŚ DZIAŁANIE NIEPOŻĄDANE</a>
                     <a href="" class="footer-bottom-link"><i class="icon-social-linkedIn"></i></a>
                 </div>
             </div>
@@ -648,7 +656,7 @@
 
     <!-- Modal -->
     <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content modal-search">
 
                 <div class="input-group input-group-lg">

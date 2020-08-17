@@ -356,3 +356,44 @@
         width: 100%;
     }
 }
+
+
+[class*="column-"] {
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    margin-top: -5px;
+    .card {
+        margin-top: 5px;
+        overflow: hidden;
+        display: inline-flex;
+        -webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
+        break-inside: avoid-column;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .column-sm-2 {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .column-lg-3 {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .column-xl-4 {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+    }
+}
