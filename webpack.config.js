@@ -20,6 +20,8 @@ const htmlServer = generateHtml('server');
 const htmlNews = generateHtml('news');
 const htmlNewsDetails = generateHtml('news-details');
 const htmlContact = generateHtml('contact');
+const htmlContactForm = generateHtml('contact-form');
+const htmlProductForm = generateHtml('product-form');
 
 
 module.exports = (env, options) => {
@@ -55,7 +57,9 @@ module.exports = (env, options) => {
             .concat(htmlServer)
             .concat(htmlNews)
             .concat(htmlNewsDetails)
-            .concat(htmlContact),
+            .concat(htmlContact)
+            .concat(htmlContactForm)
+            .concat(htmlProductForm),
 
         optimization: {
             minimizer: [

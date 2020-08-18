@@ -110,6 +110,15 @@
         border-radius: 8px;
       }
     }
+    @include media-breakpoint-down(xs) {
+      width: calc(100% + 30px);
+      &.box-img-right,
+      &.box-img-left {
+        border-radius: 0;
+        margin-left: -15px;
+        margin-right: -15px;
+      }
+    }
     top: 0;
     bottom: 0;
     background-size: cover;

@@ -17,7 +17,7 @@ main {
           min-width: 190px;
         }
         text-align: center;
-        padding: 2px 20px 1px;
+        padding: 2px 20px;
         border: 1px solid $app-color-1;
         color: $app-color-1;
         &.active {
@@ -35,7 +35,7 @@ main {
   }
 
   .filter-item {
-    margin: 10px;
+    margin: 6px 10px;
     color: rgba($body-color,.7);
     font-size: 18px;
     font-weight: 500;

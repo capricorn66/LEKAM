@@ -48,7 +48,7 @@ header {
         .brand {
             margin: 20px 40px -40px 0;
             @include media-breakpoint-only(sm) {
-                margin: 20px 40px -50px 0;
+                margin: 20px 40px -40px 0;
             }
             @include media-breakpoint-only(md) {
                 -ms-flex-item-align: start;
@@ -181,6 +181,17 @@ header {
                             margin-top: 0;
                         }
                     }
+                    @include media-breakpoint-down(md) {
+                        &.dropdown .nav-link {
+                            background-image: url("../images/arrow-down.svg");
+                            background-repeat: no-repeat;
+                            background-position: right 15px bottom 16px;
+                            background-size: 16px;
+                        }
+                        &.dropdown.show .nav-link {
+                            background-image: url("../images/arrow-up.svg");
+                        }
+                    }
                     .nav-link {
                         color: $app-color-1;
                         padding: 10px;
@@ -208,18 +219,20 @@ header {
                                     box-shadow: 0 5px 10px -5px rgba($black,.5) inset, 0 5px 10px 5px rgba($black,.1);
                                     border-radius: 0 0 8px 8px;
                                     background-color: $app-color-1;
-                                    min-width: 120%;
+                                    min-width: 230px;
                                 }
                                 padding: 5px;
                                 .dropdown-item {
                                     color: rgba($app-color-1,.7);
                                     font-size: 18px;
                                     padding: 5px 20px 5px 10px;
+                                    @include media-breakpoint-down(md) {
+                                        padding: 5px 20px 5px 30px;
+                                    }
                                     margin-bottom: 2px;
                                     @include media-breakpoint-up(md) {
                                         color: $white;
                                     }
-                                    &:focus,
                                     &:hover {
                                         background-color: rgba($app-color-2,.2);
                                         color: $white;
