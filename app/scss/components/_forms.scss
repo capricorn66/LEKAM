@@ -3,6 +3,7 @@
 
 .form-control {
   border-radius: 0;
+  min-height: 38px;
   &:disabled,
   &[readonly] {
     background: $gray-200;
