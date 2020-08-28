@@ -91,7 +91,7 @@
   .box-img {
     @include media-breakpoint-up(lg) {
       position: absolute;
-      width: calc(50vw - 40px);
+      width: calc(50vw - 39px);
       &.box-img-right {
         border-radius: 8px 0 0 8px;
         left: 0;
@@ -111,7 +111,7 @@
       }
     }
     @include media-breakpoint-down(xs) {
-      width: calc(100% + 40px);
+      width: calc(100% + 39px);
       &.box-img-right,
       &.box-img-left {
         border-radius: 0;
