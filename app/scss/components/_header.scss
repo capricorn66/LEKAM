@@ -181,7 +181,7 @@ header {
                             margin-top: 0;
                         }
                     }
-                    @include media-breakpoint-down(md) {
+                    @include media-breakpoint-down(sm) {
                         &.dropdown .nav-link {
                             background-image: url("../images/arrow-down.svg");
                             background-repeat: no-repeat;
