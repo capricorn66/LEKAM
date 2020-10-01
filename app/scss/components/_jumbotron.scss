@@ -130,7 +130,7 @@
   }
 
   h1 {
-    font-size: 64px;
+    font-size: 60px;
     line-height: 1em;
     @include media-breakpoint-down(md) {
       font-size: 56px;
@@ -141,13 +141,14 @@
     @include media-breakpoint-down(xs) {
       font-size: 40px;
     }
-    font-weight: 800;
+    font-weight: 500;
     display: inline-block;
     position: relative;
+    margin-bottom: .4em;
   }
   .lead {
     font-size: 22px;
-    line-height: 1.2em;
+    line-height: 1.4em;
   }
   .btn {
     margin-top: 20px;

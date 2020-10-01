@@ -2,7 +2,9 @@
 *******************************************************************/
 
 header {
-    position: fixed;
+    @include media-breakpoint-up(md) {
+        position: fixed;
+    }
     top: 0;
     z-index: 101;
     width: 100%;
@@ -32,17 +34,17 @@ header {
     .navbar {
 
         padding: 0;
-        font-size: 18px;
+        font-size: 16px;
 
         @include media-breakpoint-only(md) {
             -ms-flex-direction: column;
             flex-direction: column;
         }
         @include media-breakpoint-up(lg) {
-            font-size: 19px;
+            font-size: 17px;
         }
         @include media-breakpoint-up(xl) {
-            font-size: 20px;
+            font-size: 18px;
         }
 
         .brand {
@@ -94,7 +96,13 @@ header {
 
         .btn-lang {
             color: $app-color-1;
-            font-size: 20px;
+            font-size: 16px;
+            @include media-breakpoint-up(lg) {
+                font-size: 17px;
+            }
+            @include media-breakpoint-up(xl) {
+                font-size: 18px;
+            }
             padding-right: 5px;
             padding-left: 5px;
             min-width: auto;
@@ -188,6 +196,8 @@ header {
                             background-position: right 15px bottom 16px;
                             background-size: 16px;
                         }
+                        &.dropdown .nav-link:focus,
+                        &.dropdown .nav-link:hover,
                         &.dropdown.show .nav-link {
                             background-image: url("../images/arrow-up.svg");
                         }
@@ -228,15 +238,21 @@ header {
                                     padding: 5px 20px 5px 10px;
                                     @include media-breakpoint-down(md) {
                                         padding: 5px 20px 5px 30px;
+                                        &:active,
+                                        &:hover {
+                                            background-color: rgba($app-color-2,.2);
+                                        }
                                     }
                                     margin-bottom: 2px;
                                     @include media-breakpoint-up(md) {
                                         color: $white;
+                                        &:active,
+                                        &:hover {
+                                            background-color: rgba($app-color-2,.2);
+                                            color: $white;
+                                        }
                                     }
-                                    &:hover {
-                                        background-color: rgba($app-color-2,.2);
-                                        color: $white;
-                                    }
+
                                     &:last-child {
                                         border-bottom: 0;
                                     }

@@ -5,14 +5,8 @@ html {
 }
 
 body {
-  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   color: $body-color;
-  @include media-breakpoint-only(xs) {
-    padding-top: 114px;
-  }
-  @include media-breakpoint-only(sm) {
-    padding-top: 108px;
-  }
   @include media-breakpoint-only(md) {
     padding-top: 163px;
   }
