@@ -127,6 +127,9 @@
   @include transition(box-shadow .2s ease);
 
   .product-box-img {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
     a {
       display: block;
       position: relative;
