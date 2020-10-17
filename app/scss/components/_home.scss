@@ -111,7 +111,7 @@
       }
     }
     @include media-breakpoint-down(xs) {
-      width: calc(100% + 39px);
+      width: calc(100% + 30px);
       &.box-img-right,
       &.box-img-left {
         border-radius: 0;

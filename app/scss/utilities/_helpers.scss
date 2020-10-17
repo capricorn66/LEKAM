@@ -325,26 +325,28 @@
     }
 }
 
-.row.gutter-sm {
-    margin-left: -10px;
-    margin-right: -10px;
-    > [class^="col-"],
-    > [class^=" col-"] {
-        padding-left: 10px;
-        padding-right: 10px;
+@include media-breakpoint-up(md) {
+    .row.gutter-sm {
+        margin-left: -10px;
+        margin-right: -10px;
+        > [class^="col-"],
+        > [class^=" col-"] {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+    .row.gutter-lg {
+        margin-left: -30px;
+        margin-right: -30px;
+
+        > [class^="col-"],
+        > [class^=" col-"] {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
     }
 }
-
-.row.gutter-lg {
-    margin-left: -30px;
-    margin-right: -30px;
-    > [class^="col-"],
-    > [class^=" col-"] {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-}
-
 
 
 .pointer {
